@@ -1,0 +1,2097 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#2A1710">
+
+<title>Yadunanand Ahir Boarding, Rajkot — Boys' Hostel for Students | Admissions Open</title>
+<meta name="description" content="Yadunanand Ahir Boarding, Rajkot: a disciplined, well-maintained residential boarding for students — secure campus, study hall, hygienic mess, transparent fees. See facilities, rules, fees and the admission process.">
+<link rel="canonical" href="https://mediatedwithdeep-art.github.io/yadunandan-ahir-boarding/">
+<meta name="robots" content="index,follow,max-image-preview:large">
+
+<!-- Open Graph / social -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Yadunanand Ahir Boarding">
+<meta property="og:title" content="Yadunanand Ahir Boarding, Rajkot — Boys' Hostel for Students">
+<meta property="og:description" content="Discipline · Education · Excellence. A well-maintained residential boarding in Rajkot: secure campus, study hall, hygienic mess, transparent fees.">
+<meta property="og:url" content="https://mediatedwithdeep-art.github.io/yadunandan-ahir-boarding/">
+<meta property="og:locale" content="en_IN">
+<!-- The cream-background logo works today. Swap for a 1200x630 photo of the
+     building with the logo overlaid once one exists — a landscape photo fills
+     the WhatsApp/Facebook preview card better than a square mark. -->
+<meta property="og:image" content="assets/brand/logo-cream.png">
+<meta property="og:image:width" content="640">
+<meta property="og:image:height" content="640">
+<meta property="og:image:alt" content="Yadunanand Ahir Boarding — Discipline, Education, Excellence">
+<meta name="twitter:card" content="summary_large_image">
+
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='7' fill='%232A1710'/><text x='16' y='22' font-size='16' font-family='serif' fill='%23C79A3E' text-anchor='middle'>A</text></svg>">
+
+<!-- Registered before any image starts loading so the eager hero image is covered too.
+     Swaps a missing photo for a labelled placeholder that states the shot required. -->
+<script>
+addEventListener("error", function (e) {
+  var el = e.target;
+  if (!el || el.tagName !== "IMG") return;
+  // The header emblem simply removes itself, revealing the lettermark beneath.
+  if (el.classList.contains("brand-img")) { el.remove(); return; }
+  if (!el.classList.contains("ph")) return;
+  var box = document.createElement("div");
+  box.className = "ph-fallback";
+  box.setAttribute("data-alt", el.getAttribute("alt") || "");
+  box.innerHTML = '<b>Photo needed</b><span>' +
+    (el.getAttribute("data-shot") || "Real photograph required.") +
+    '</span><code>' + el.getAttribute("src") + '</code>';
+  el.replaceWith(box);
+}, true);
+</script>
+
+<link rel="icon" type="image/png" sizes="180x180" href="assets/brand/emblem.png">
+<link rel="apple-touch-icon" href="assets/brand/emblem.png">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&display=swap" media="print" onload="this.media='all'">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&display=swap"></noscript>
+
+<style>
+/* ============================================================
+   DESIGN TOKENS
+   Palette is derived from the Yadunanand Ahir Boarding logo: deep brown,
+   temple gold, cream. Contrast is measured, not assumed — ratios inline.
+   HARD RULE: --brass-500 is never used for text on light surfaces
+   (#A8781F on #FFFFFF = 3.91:1 — passes 3:1 non-text, fails AA text).
+   Use --brass-text (#8A6318, 5.41:1) when gold must carry words.
+   ============================================================ */
+:root{
+  /* Brand */
+  --ink-950:#1C0F08; --ink-900:#2A1710; --ink-800:#3B2317; --ink-700:#4E3222;
+  --brand-700:#4A2718;  /* on white 13.17:1 */
+  --brand-600:#5C3320;  /* white on it 10.77:1 */
+  --brand-500:#8A5433;  /* focus ring, 6.18:1 on white */
+  --brass-500:#A8781F;  /* graphics/borders only — 3.91:1 on white */
+  --brass-text:#8A6318;  /* the gold that may carry text — 5.41:1 on white */
+  --brass-400:#C79A3E;  /* on ink-950 7.24:1 */
+  --brass-300:#E3C078;  /* on ink-950 10.77:1 */
+
+  /* Neutrals */
+  --n-0:#FFFFFF; --n-50:#FAF8F6; --n-100:#F4F1EE; --n-200:#E9E4DF;
+  --n-300:#D6CEC7; --n-400:#A79C95;
+  --n-450:#867B75; /* control borders — 4.11:1 on white, 3.83:1 on cream */
+  --n-500:#6B615B; /* ≥18px on light only — 3.11:1 on ink-950, never on dark */
+  --n-600:#4F4642; /* muted body — 9.18:1 */
+  --n-700:#3A3330; /* body — 12.38:1 */
+  --n-800:#2A2523; --n-900:#1B1817;
+  --parchment:#FDF6EA;
+
+  /* Semantic — never reused decoratively */
+  --ok:#1F7A55;    /* 5.29:1 */
+  --warn:#9A6400;
+  --err:#B23A32;   /* 5.93:1 */
+
+  /* Surfaces */
+  --bg:var(--n-0);
+  --surface:var(--n-0);
+  --surface-2:var(--n-50);
+  --line:var(--n-200);
+
+  /* Spacing — 4/8pt scale, no arbitrary values anywhere */
+  --s-1:4px; --s-2:8px; --s-3:12px; --s-4:16px; --s-5:24px;
+  --s-6:32px; --s-7:48px; --s-8:64px; --s-9:96px; --s-10:128px;
+
+  /* Radii */
+  --r-sm:8px; --r-md:12px; --r-lg:18px; --r-xl:28px; --r-pill:999px;
+
+  /* Type */
+  --font-display:"Fraunces",ui-serif,"Iowan Old Style",Georgia,"Times New Roman",serif;
+  --font-body:ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,
+    "Noto Sans Gujarati","Shruti",sans-serif;
+
+  /* Motion */
+  --dur-fast:140ms; --dur-mid:260ms; --dur-slow:420ms;
+  --ease-out:cubic-bezier(.16,.84,.44,1);
+  --ease-in:cubic-bezier(.55,0,1,.45);
+
+  /* Elevation — kept cheap; no animated box-shadows */
+  --sh-1:0 1px 2px rgba(28,15,8,.06), 0 1px 1px rgba(28,15,8,.04);
+  --sh-2:0 6px 16px rgba(28,15,8,.08), 0 2px 4px rgba(28,15,8,.04);
+  --sh-3:0 18px 44px rgba(28,15,8,.12), 0 4px 10px rgba(28,15,8,.05);
+
+  --header-h:64px;
+  --container:1200px;
+}
+
+/* ------------ Reset ------------ */
+*,*::before,*::after{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%;scroll-behavior:smooth;scroll-padding-top:calc(var(--header-h) + 16px)}
+body{margin:0;background:var(--bg);color:var(--n-700);
+  font-family:var(--font-body);font-size:16px;line-height:1.6;
+  -webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility;
+  overflow-x:hidden;padding-bottom:env(safe-area-inset-bottom)}
+img,svg,picture{max-width:100%;display:block}
+img{height:auto}
+button,input,select,textarea{font:inherit;color:inherit}
+h1,h2,h3,h4{margin:0;font-family:var(--font-display);color:var(--brand-700);
+  font-weight:600;line-height:1.15;letter-spacing:-.015em;
+  font-variation-settings:"SOFT" 0,"WONK" 0}
+p{margin:0}
+ul,ol{margin:0;padding:0;list-style:none}
+a{color:var(--brand-600);text-underline-offset:3px}
+
+/* Focus — visible on every interactive element, both surfaces */
+:where(a,button,input,select,textarea,summary,[tabindex]):focus-visible{
+  outline:3px solid var(--brand-500);outline-offset:3px;border-radius:var(--r-sm)}
+.on-dark :where(a,button,summary):focus-visible{outline-color:var(--brass-300)}
+
+::selection{background:var(--brass-300);color:var(--ink-950)}
+
+.skip{position:absolute;left:var(--s-4);top:-100px;z-index:200;
+  background:var(--brand-700);color:#fff;padding:var(--s-3) var(--s-5);
+  border-radius:var(--r-sm);font-weight:600;transition:top var(--dur-fast) var(--ease-out)}
+.skip:focus{top:var(--s-4)}
+
+/* ------------ Layout primitives ------------ */
+.container{width:100%;max-width:var(--container);margin-inline:auto;padding-inline:var(--s-5)}
+.section{padding-block:var(--s-8);position:relative}
+.section--tight{padding-block:var(--s-7)}
+.section--alt{background:var(--surface-2);border-block:1px solid var(--line)}
+.section--dark{background:var(--ink-900);color:var(--n-300)}
+.section--parchment{background:var(--parchment)}
+@media (min-width:768px){.section{padding-block:var(--s-9)}}
+
+.eyebrow{display:inline-flex;align-items:center;gap:var(--s-2);
+  font-size:12px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;
+  color:var(--brass-text)}
+.eyebrow::before{content:"";width:20px;height:2px;background:var(--brass-500);border-radius:2px}
+.section--dark .eyebrow{color:var(--brass-300)}
+
+.h-sec{font-size:clamp(28px,5.2vw,44px);margin-top:var(--s-3);max-width:20ch;text-wrap:balance}
+.section--dark .h-sec{color:var(--n-0)}
+.lede{margin-top:var(--s-4);font-size:clamp(16px,2.2vw,18px);color:var(--n-600);max-width:62ch}
+.section--dark .lede{color:var(--n-300)}
+.sec-head{margin-bottom:var(--s-7)}
+
+.grid{display:grid;gap:var(--s-4)}
+/* Grid/flex children default to min-width:auto, so any wide child (the fee
+   table at min-width:520px) forces the whole page wider than the viewport.
+   This is what lets .table-wrap's own overflow-x:auto actually take effect. */
+.grid > *,.split > *,.contact-grid > *,.steps > *,.rules > *{min-width:0}
+@media (min-width:640px){.grid-2{grid-template-columns:repeat(2,1fr)}}
+@media (min-width:960px){
+  .grid-3{grid-template-columns:repeat(3,1fr)}
+  .grid-4{grid-template-columns:repeat(4,1fr)}
+  .grid{gap:var(--s-5)}
+}
+
+/* ------------ Buttons — all states named ------------ */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:var(--s-2);
+  min-height:48px;padding:var(--s-3) var(--s-5);border-radius:var(--r-pill);
+  font-weight:650;font-size:15px;text-decoration:none;border:1.5px solid transparent;
+  cursor:pointer;background:none;
+  transition:transform var(--dur-fast) var(--ease-out),
+             background-color var(--dur-fast) var(--ease-out),
+             border-color var(--dur-fast) var(--ease-out),
+             color var(--dur-fast) var(--ease-out)}
+.btn:active{transform:translateY(1px) scale(.99)}
+.btn[disabled],.btn[aria-disabled="true"]{opacity:.5;pointer-events:none}
+
+.btn--primary{background:var(--brand-600);color:#fff;box-shadow:var(--sh-2)}
+.btn--primary:hover{background:var(--brand-700)}
+
+.btn--brass{background:var(--brass-400);color:var(--ink-950)} /* 9.46:1 */
+.btn--brass:hover{background:var(--brass-300)}
+
+.btn--ghost{border-color:var(--n-450);color:var(--brand-700);background:var(--n-0)}
+.btn--ghost:hover{border-color:var(--brand-600);background:var(--n-50)}
+.on-dark .btn--ghost{border-color:rgba(227,192,120,.5);color:var(--brass-300);background:transparent}
+.on-dark .btn--ghost:hover{border-color:var(--brass-300);background:rgba(227,192,120,.1)}
+
+/* WhatsApp brand #128C7E is only 4.14:1 against white — darkened to pass AA */
+.btn--wa{background:#107C69;color:#fff} /* 5.11:1 */
+.btn--wa:hover{background:#0B5F50}
+.btn--block{width:100%}
+
+/* ------------ Cards ------------ */
+.card{background:var(--surface);border:1px solid var(--line);border-radius:var(--r-lg);
+  padding:var(--s-5);box-shadow:var(--sh-1);
+  transition:transform var(--dur-mid) var(--ease-out),border-color var(--dur-mid) var(--ease-out)}
+.card h3{font-size:19px;margin-bottom:var(--s-2)}
+.card p{color:var(--n-600);font-size:15px}
+@media (hover:hover){.card--lift:hover{transform:translateY(-4px);border-color:var(--n-300)}}
+
+.icon-badge{width:44px;height:44px;display:grid;place-items:center;border-radius:var(--r-md);
+  background:linear-gradient(160deg,var(--ink-800),var(--ink-900));color:var(--brass-300);
+  margin-bottom:var(--s-4)}
+.icon-badge svg{width:22px;height:22px}
+
+/* ------------ Placeholder / pending-content system ------------ */
+.pending{border-bottom:2px dotted var(--brass-500);cursor:help;
+  background:rgba(168,120,31,.10);padding-inline:3px;border-radius:3px;color:inherit}
+.pending::after{content:"\00a0◇";font-size:.75em;color:var(--warn);vertical-align:super}
+.section--dark .pending{background:rgba(227,192,120,.14);border-bottom-color:var(--brass-300)}
+.section--dark .pending::after{color:var(--brass-300)}
+
+.ph-fallback{display:flex;flex-direction:column;justify-content:flex-end;gap:var(--s-2);
+  padding:var(--s-4);background:
+    linear-gradient(135deg,rgba(74,39,24,.06),rgba(168,120,31,.10)),
+    repeating-linear-gradient(45deg,transparent 0 10px,rgba(74,39,24,.05) 10px 20px);
+  border:1.5px dashed var(--n-450);border-radius:inherit;color:var(--n-600);
+  font-size:12.5px;line-height:1.45;width:100%;height:100%}
+.ph-fallback b{display:block;font-size:11px;letter-spacing:.09em;text-transform:uppercase;color:var(--warn)}
+.ph-fallback code{font-size:11px;color:var(--n-500);word-break:break-all}
+
+/* ------------ Header ------------ */
+.header{position:fixed;inset:0 0 auto;z-index:100;height:var(--header-h);
+  display:flex;align-items:center;
+  background:rgba(255,255,255,.72);
+  border-bottom:1px solid transparent;
+  transition:background var(--dur-mid) var(--ease-out),border-color var(--dur-mid) var(--ease-out)}
+@supports (backdrop-filter:blur(1px)){
+  .header{backdrop-filter:saturate(180%) blur(14px);-webkit-backdrop-filter:saturate(180%) blur(14px)}
+}
+.header[data-stuck="true"]{background:rgba(255,255,255,.9);border-bottom-color:var(--line);box-shadow:var(--sh-1)}
+/* At the very top the header sits over the dark hero, so it goes fully
+   transparent with light text and only becomes the glass bar once scrolled.
+   It is only ever in this state above the hero, never over a light section. */
+.header:not([data-stuck="true"]){background:transparent;backdrop-filter:none;-webkit-backdrop-filter:none}
+.header:not([data-stuck="true"]) .brand{color:#fff}
+.header:not([data-stuck="true"]) .brand-txt span{color:var(--n-400)}
+.header:not([data-stuck="true"]) .nav a{color:var(--n-300)}
+.header:not([data-stuck="true"]) .nav a:hover,
+.header:not([data-stuck="true"]) .nav a[aria-current="true"]{color:#fff;background:rgba(255,255,255,.12)}
+.header:not([data-stuck="true"]) .burger{background:rgba(255,255,255,.08);border-color:rgba(255,255,255,.28)}
+.header:not([data-stuck="true"]) .burger span{background:#fff}
+/* A solid brown button disappears against the brown hero. Over the hero the
+   header CTA becomes a gold outline — visible, and correctly secondary to the
+   solid gold primary in the hero itself. */
+.header:not([data-stuck="true"]) .btn--primary{background:transparent;box-shadow:none;
+  border-color:var(--brass-300);color:var(--brass-300)}
+.header:not([data-stuck="true"]) .btn--primary:hover{background:rgba(227,192,120,.14)}
+.header .container{display:flex;align-items:center;justify-content:space-between;gap:var(--s-4)}
+
+.brand{display:flex;align-items:center;gap:var(--s-3);text-decoration:none;color:var(--brand-700);min-width:0}
+/* The emblem sits over the lettermark. If assets/brand/emblem.png is missing the
+   <img> removes itself and the lettermark underneath shows — the header never
+   renders a broken image. */
+.brand-mark{position:relative;width:40px;height:40px;flex:none;border-radius:10px;
+  display:grid;place-items:center;overflow:hidden;
+  background:linear-gradient(150deg,var(--ink-800),var(--ink-950));
+  color:var(--brass-300);font-family:var(--font-display);font-size:19px;font-weight:700;
+  box-shadow:inset 0 1px 0 rgba(227,192,120,.25)}
+.brand-mark img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.brand-mark:has(img){background:var(--parchment);box-shadow:none}
+.brand-txt{display:flex;flex-direction:column;line-height:1.1;min-width:0}
+.brand-txt strong{font-family:var(--font-display);font-size:16px;font-weight:700;white-space:nowrap}
+.brand-txt span{font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:var(--n-600);
+  white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+
+/* Full logo lockup — footer and any place the whole mark should read */
+.logo-lockup{display:block;width:clamp(160px,42vw,200px);height:auto}
+
+.nav{display:none}
+@media (min-width:1024px){
+  .nav{display:flex;align-items:center;gap:var(--s-1)}
+  .nav a{padding:var(--s-2) var(--s-3);border-radius:var(--r-sm);font-size:14.5px;font-weight:550;
+    color:var(--n-700);text-decoration:none;transition:color var(--dur-fast),background var(--dur-fast)}
+  .nav a:hover{color:var(--brand-700);background:var(--n-100)}
+  .nav a[aria-current="true"]{color:var(--brand-700);background:var(--n-100)}
+}
+.header-cta{display:none}
+@media (min-width:640px){.header-cta{display:inline-flex;min-height:42px;padding-inline:var(--s-4);font-size:14px}}
+
+.burger{display:grid;place-items:center;width:44px;height:44px;border:1px solid var(--line);
+  border-radius:var(--r-md);background:var(--n-0);cursor:pointer}
+@media (min-width:1024px){.burger{display:none}}
+.burger span{display:block;width:18px;height:2px;background:var(--brand-700);border-radius:2px;
+  transition:transform var(--dur-mid) var(--ease-out),opacity var(--dur-fast)}
+.burger span+span{margin-top:4px}
+.burger[aria-expanded="true"] span:nth-child(1){transform:translateY(6px) rotate(45deg)}
+.burger[aria-expanded="true"] span:nth-child(2){opacity:0}
+.burger[aria-expanded="true"] span:nth-child(3){transform:translateY(-6px) rotate(-45deg)}
+
+.scrollbar{position:absolute;left:0;bottom:-1px;height:2px;width:100%;transform:scaleX(0);
+  transform-origin:0 50%;background:linear-gradient(90deg,var(--brand-600),var(--brass-500))}
+
+/* Mobile drawer */
+.drawer{position:fixed;inset:0;z-index:110;visibility:hidden}
+.drawer[data-open="true"]{visibility:visible}
+.drawer__scrim{position:absolute;inset:0;background:rgba(28,15,8,.55);opacity:0;
+  transition:opacity var(--dur-mid) var(--ease-out)}
+.drawer[data-open="true"] .drawer__scrim{opacity:1}
+.drawer__panel{position:absolute;inset:0 0 0 auto;width:min(88vw,360px);background:var(--n-0);
+  padding:var(--s-5) var(--s-5) calc(var(--s-6) + env(safe-area-inset-bottom));
+  display:flex;flex-direction:column;gap:var(--s-2);overflow-y:auto;
+  transform:translateX(100%);transition:transform var(--dur-slow) var(--ease-out);box-shadow:var(--sh-3)}
+.drawer[data-open="true"] .drawer__panel{transform:none}
+.drawer__panel a{padding:var(--s-3) var(--s-3);border-radius:var(--r-md);text-decoration:none;
+  color:var(--n-800);font-weight:550;font-size:16px;min-height:48px;display:flex;align-items:center}
+.drawer__panel a:hover{background:var(--n-100)}
+.drawer__head{display:flex;justify-content:space-between;align-items:center;margin-bottom:var(--s-3)}
+.drawer__close{width:44px;height:44px;border-radius:var(--r-md);border:1px solid var(--line);
+  background:var(--n-0);cursor:pointer;font-size:20px;line-height:1;color:var(--n-700)}
+.drawer__foot{margin-top:var(--s-5);display:grid;gap:var(--s-3)}
+body[data-lock="true"]{overflow:hidden}
+
+/* ------------ Hero ------------ */
+.hero{position:relative;isolation:isolate;padding-top:calc(var(--header-h) + var(--s-7));
+  padding-bottom:var(--s-8);background:var(--ink-950);color:var(--n-300);overflow:hidden}
+.hero__bg{position:absolute;inset:0;z-index:-2}
+.hero__bg img{width:100%;height:100%;object-fit:cover;opacity:.4}
+.hero__bg .ph-fallback{opacity:.35}
+.hero__veil{position:absolute;inset:0;z-index:-1;
+  background:
+    radial-gradient(120% 80% at 15% 0%,rgba(92,51,32,.55),transparent 60%),
+    radial-gradient(90% 70% at 95% 20%,rgba(168,120,31,.22),transparent 55%),
+    linear-gradient(180deg,rgba(28,15,8,.75) 0%,rgba(28,15,8,.86) 55%,var(--ink-950) 100%)}
+.hero__inner{position:relative;max-width:52rem}
+.hero h1{font-size:clamp(34px,8.6vw,68px);color:var(--n-0);line-height:1.06;
+  letter-spacing:-.025em;margin-top:var(--s-4);text-wrap:balance}
+.hero h1 em{font-style:normal;color:var(--brass-300);display:block}
+.hero__motto{margin-top:var(--s-5);font-size:11.5px;letter-spacing:.28em;text-transform:uppercase;
+  color:var(--brass-300);font-weight:700}
+.hero__sub{margin-top:var(--s-5);font-size:clamp(16px,2.4vw,19px);color:var(--n-300);max-width:56ch}
+.hero__actions{margin-top:var(--s-6);display:flex;flex-wrap:wrap;gap:var(--s-3)}
+.hero__actions .btn{flex:1 1 auto;min-width:min(100%,220px)}
+@media (min-width:640px){.hero__actions .btn{flex:0 0 auto;min-width:0}}
+
+.pill{display:inline-flex;align-items:center;gap:var(--s-2);padding:6px var(--s-3);
+  border-radius:var(--r-pill);font-size:12.5px;font-weight:650;letter-spacing:.02em;
+  background:rgba(227,192,120,.14);color:var(--brass-300);border:1px solid rgba(227,192,120,.3)}
+.pill .dot{width:7px;height:7px;border-radius:50%;background:var(--brass-300)}
+@media (prefers-reduced-motion:no-preference){
+  .pill .dot{animation:pulse 2.4s var(--ease-out) infinite}
+}
+@keyframes pulse{0%,100%{opacity:1;transform:scale(1)}50%{opacity:.45;transform:scale(.8)}}
+
+.hero__trust{margin-top:var(--s-7);display:grid;gap:var(--s-3);
+  grid-template-columns:repeat(2,1fr);border-top:1px solid rgba(227,192,120,.22);padding-top:var(--s-5)}
+@media (min-width:768px){.hero__trust{grid-template-columns:repeat(4,1fr);gap:var(--s-5)}}
+.hero__trust div{min-width:0}
+.hero__trust dt{font-family:var(--font-display);font-size:clamp(20px,4vw,28px);color:var(--n-0);font-weight:600}
+.hero__trust dd{margin:2px 0 0;font-size:12.5px;color:var(--n-400);letter-spacing:.03em}
+
+.scroll-hint{margin-top:var(--s-6);display:inline-flex;align-items:center;gap:var(--s-2);
+  font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--n-400)}
+@media (prefers-reduced-motion:no-preference){
+  .scroll-hint svg{animation:bob 2s var(--ease-out) infinite}
+}
+@keyframes bob{0%,100%{transform:translateY(0)}50%{transform:translateY(5px)}}
+
+/* ------------ Media frames (fixed ratios → zero CLS) ------------ */
+/* The frame carries the placeholder pattern itself, so a photo that has not
+   loaded yet reads as "image pending", never as a broken page. */
+.frame{position:relative;border-radius:var(--r-lg);overflow:hidden;border:1px solid var(--line);
+  background:
+    linear-gradient(135deg,rgba(74,39,24,.05),rgba(168,120,31,.08)),
+    repeating-linear-gradient(45deg,transparent 0 10px,rgba(74,39,24,.045) 10px 20px),
+    var(--n-100)}
+.frame > img,.frame > .ph-fallback{width:100%;height:100%;object-fit:cover}
+.r-16-10{aspect-ratio:16/10}
+.r-4-3{aspect-ratio:4/3}
+.r-1-1{aspect-ratio:1/1}
+.r-3-4{aspect-ratio:3/4}
+
+/* Facility card */
+.fac{padding:0;overflow:hidden;display:flex;flex-direction:column}
+.fac .frame{border:0;border-radius:0}
+.fac__body{padding:var(--s-5);display:flex;flex-direction:column;gap:var(--s-2);flex:1}
+.fac__body h3{font-size:18px}
+.fac__tag{align-self:flex-start;font-size:11px;font-weight:700;letter-spacing:.09em;
+  text-transform:uppercase;color:var(--brand-600);background:var(--n-100);
+  padding:4px var(--s-2);border-radius:var(--r-sm)}
+
+/* ------------ Split feature ------------ */
+.split{display:grid;gap:var(--s-6);align-items:center}
+@media (min-width:900px){
+  .split{grid-template-columns:1fr 1fr;gap:var(--s-8)}
+  .split--flip .split__media{order:-1}
+}
+
+/* ------------ Checklist ------------ */
+.checks{display:grid;gap:var(--s-3);margin-top:var(--s-5)}
+.checks li{display:flex;gap:var(--s-3);align-items:flex-start;font-size:15.5px}
+.checks svg{flex:none;width:20px;height:20px;margin-top:2px;color:var(--ok)}
+.section--dark .checks svg{color:var(--brass-300)}
+
+/* ------------ Gallery ------------ */
+.gallery{display:grid;gap:var(--s-3);grid-template-columns:repeat(2,1fr)}
+@media (min-width:768px){.gallery{grid-template-columns:repeat(4,1fr);gap:var(--s-4)}}
+.gallery button{padding:0;border:0;background:none;cursor:zoom-in;border-radius:var(--r-md);
+  overflow:hidden;position:relative;display:block}
+.gallery .frame{border-radius:var(--r-md)}
+@media (min-width:768px){
+  .gallery button:nth-child(1),.gallery button:nth-child(6){grid-column:span 2;grid-row:span 2}
+}
+.gallery button::after{content:"";position:absolute;inset:0;background:rgba(28,15,8,0);
+  transition:background var(--dur-fast) var(--ease-out)}
+@media (hover:hover){.gallery button:hover::after{background:rgba(28,15,8,.18)}}
+
+/* Lightbox */
+.lb{position:fixed;inset:0;z-index:120;display:none;place-items:center;
+  background:rgba(28,15,8,.92);padding:var(--s-4)}
+.lb[data-open="true"]{display:grid}
+.lb figure{margin:0;max-width:min(94vw,1100px);width:100%}
+.lb .frame{border:0;background:var(--ink-800)}
+.lb figcaption{color:var(--n-300);font-size:14px;margin-top:var(--s-3);text-align:center}
+.lb__bar{position:absolute;top:var(--s-4);right:var(--s-4);display:flex;gap:var(--s-2)}
+.lb__btn{width:46px;height:46px;border-radius:var(--r-pill);border:1px solid rgba(255,255,255,.25);
+  background:rgba(255,255,255,.08);color:#fff;font-size:20px;cursor:pointer;display:grid;place-items:center}
+.lb__btn:hover{background:rgba(255,255,255,.18)}
+.lb__nav{position:absolute;top:50%;transform:translateY(-50%);width:46px;height:46px}
+.lb__nav--prev{left:var(--s-3)} .lb__nav--next{right:var(--s-3)}
+
+/* ------------ Room cards ------------ */
+.room{display:flex;flex-direction:column;padding:0;overflow:hidden}
+.room .frame{border:0;border-radius:0}
+.room__body{padding:var(--s-5);display:flex;flex-direction:column;gap:var(--s-3);flex:1}
+.room__meta{display:flex;flex-wrap:wrap;gap:var(--s-2)}
+.chip{font-size:12px;font-weight:600;padding:4px var(--s-3);border-radius:var(--r-pill);
+  background:var(--n-100);color:var(--n-700);border:1px solid var(--line)}
+.room__price{margin-top:auto;padding-top:var(--s-4);border-top:1px dashed var(--line);
+  font-family:var(--font-display);font-size:20px;color:var(--brand-700);font-weight:600}
+.room__price small{display:block;font-family:var(--font-body);font-size:12.5px;color:var(--n-600);font-weight:400}
+
+/* ------------ Donor tribute ------------ */
+.tribute{margin-top:var(--s-7);display:grid;gap:var(--s-4);align-items:center;
+  padding:var(--s-6);border-radius:var(--r-lg);background:var(--parchment);
+  border:1px solid var(--line);border-left:4px solid var(--brass-500)}
+@media (min-width:820px){.tribute{grid-template-columns:auto 1fr;gap:var(--s-6)}}
+.tribute__seal{width:56px;height:56px;display:grid;place-items:center;border-radius:50%;
+  background:linear-gradient(150deg,var(--ink-800),var(--ink-950));color:var(--brass-300)}
+.tribute__seal svg{width:26px;height:26px}
+.tribute h3{font-size:13px;letter-spacing:.1em;text-transform:uppercase;
+  font-family:var(--font-body);color:var(--brass-text);margin-bottom:var(--s-2)}
+.tribute .gu{font-family:var(--font-display);font-size:clamp(19px,3vw,25px);
+  color:var(--brand-700);font-weight:600;line-height:1.35}
+.tribute p{margin-top:var(--s-3);font-size:14.5px;color:var(--n-600);max-width:60ch}
+
+/* ------------ Full-bleed campus band ------------ */
+.band{position:relative;isolation:isolate;background:var(--ink-950);
+  min-height:clamp(260px,44vw,460px);display:flex;align-items:flex-end}
+.band > img,.band > .ph-fallback{position:absolute;inset:0;width:100%;height:100%;
+  object-fit:cover;z-index:-2}
+.band::after{content:"";position:absolute;inset:0;z-index:-1;
+  background:linear-gradient(180deg,rgba(28,15,8,.15) 0%,rgba(28,15,8,.55) 55%,rgba(28,15,8,.88) 100%)}
+.band__cap{width:100%;max-width:var(--container);margin-inline:auto;
+  padding:var(--s-7) var(--s-5) var(--s-6)}
+.band__cap h2{font-size:clamp(24px,4.4vw,38px);color:var(--n-0)}
+.band__cap p{margin-top:var(--s-3);color:var(--n-300);font-size:clamp(15px,2vw,17px);max-width:46ch}
+
+/* ------------ Timeline ------------ */
+.timeline{position:relative;margin-top:var(--s-6);padding-left:var(--s-6)}
+.timeline::before{content:"";position:absolute;left:9px;top:6px;bottom:6px;width:2px;
+  background:linear-gradient(180deg,var(--brass-500),rgba(168,120,31,.15))}
+.timeline li{position:relative;padding-bottom:var(--s-5)}
+.timeline li::before{content:"";position:absolute;left:calc(var(--s-6) * -1 + 4px);top:6px;
+  width:12px;height:12px;border-radius:50%;background:var(--ink-900);
+  border:2px solid var(--brass-400);box-shadow:0 0 0 4px var(--parchment)}
+.section--dark .timeline li::before{box-shadow:0 0 0 4px var(--ink-900);background:var(--brass-400)}
+.timeline time{font-family:var(--font-display);font-size:15px;font-weight:700;color:var(--brand-700);
+  display:block}
+.section--dark .timeline time{color:var(--brass-300)}
+.timeline p{font-size:15px;color:var(--n-600);margin-top:2px}
+.section--dark .timeline p{color:var(--n-300)}
+
+/* ------------ Steps ------------ */
+.steps{counter-reset:step;display:grid;gap:var(--s-4)}
+@media (min-width:768px){.steps{grid-template-columns:repeat(2,1fr)}}
+@media (min-width:1100px){.steps{grid-template-columns:repeat(5,1fr);gap:var(--s-3)}}
+.step{position:relative;padding:var(--s-5);border-radius:var(--r-lg);
+  background:var(--n-0);border:1px solid var(--line);box-shadow:var(--sh-1)}
+.step::before{counter-increment:step;content:counter(step,decimal-leading-zero);
+  font-family:var(--font-display);font-size:13px;font-weight:700;letter-spacing:.06em;
+  color:var(--brass-500);display:block;margin-bottom:var(--s-3)}
+.step h3{font-size:17px;margin-bottom:var(--s-2)}
+.step p{font-size:14.5px;color:var(--n-600)}
+
+/* ------------ Table ------------ */
+.table-wrap{overflow-x:auto;border:1px solid var(--line);border-radius:var(--r-lg);background:var(--n-0);
+  -webkit-overflow-scrolling:touch;min-width:0;max-width:100%}
+table{width:100%;border-collapse:collapse;min-width:460px;font-size:15px}
+/* The caption otherwise stretches to the table's 460px min-width and its text
+   is clipped off-screen on a 375px phone. Pinning it and capping its span to
+   the viewport keeps it readable without scrolling. */
+caption{position:sticky;left:0;text-align:left;padding:var(--s-4) var(--s-5) 0;
+  font-size:13.5px;color:var(--n-600)}
+caption > span{display:block;max-width:min(100%,calc(100vw - 96px))}
+.table-hint{display:flex;align-items:center;gap:var(--s-2);margin-top:var(--s-3);
+  font-size:12.5px;color:var(--n-600)}
+@media (min-width:700px){.table-hint{display:none}}
+th,td{padding:var(--s-4) var(--s-5);text-align:left;border-bottom:1px solid var(--line);vertical-align:top}
+thead th{background:var(--n-50);font-size:12px;letter-spacing:.08em;text-transform:uppercase;
+  color:var(--n-600);font-weight:700;white-space:nowrap}
+tbody tr:last-child td{border-bottom:0}
+tbody tr:nth-child(even){background:var(--n-50)}
+td.num{font-variant-numeric:tabular-nums;white-space:nowrap;font-weight:600;color:var(--brand-700)}
+
+/* ------------ Rules ------------ */
+.rules{display:grid;gap:var(--s-3)}
+@media (min-width:768px){.rules{grid-template-columns:repeat(2,1fr)}}
+.rule{display:flex;gap:var(--s-4);padding:var(--s-4) var(--s-5);border-radius:var(--r-md);
+  background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.09)}
+.rule__n{font-family:var(--font-display);font-size:14px;font-weight:700;color:var(--brass-400);flex:none;
+  padding-top:2px}
+.rule h3{font-size:16px;color:var(--n-0);margin-bottom:2px}
+.rule p{font-size:14.5px;color:var(--n-400)}
+
+/* ------------ Testimonials / achievements: honest empty states ------------ */
+.empty-state{border:1.5px dashed var(--n-450);border-radius:var(--r-lg);padding:var(--s-6);
+  background:var(--n-0);display:flex;flex-direction:column;gap:var(--s-3);align-items:flex-start}
+.empty-state h3{font-size:19px}
+.empty-state p{color:var(--n-600);font-size:15px;max-width:60ch}
+.quote-skeleton{border:1px solid var(--line);border-radius:var(--r-lg);padding:var(--s-5);
+  background:var(--n-0);display:flex;flex-direction:column;gap:var(--s-3);box-shadow:var(--sh-1)}
+.quote-skeleton .bar{height:11px;border-radius:var(--r-pill);background:var(--n-200)}
+.quote-skeleton .bar:nth-child(2){width:92%} .quote-skeleton .bar:nth-child(3){width:78%}
+.quote-skeleton .who{display:flex;align-items:center;gap:var(--s-3);margin-top:var(--s-2)}
+.quote-skeleton .av{width:38px;height:38px;border-radius:50%;background:var(--n-200);flex:none}
+
+.stat{padding:var(--s-5);border-radius:var(--r-lg);background:var(--n-0);border:1px solid var(--line);
+  text-align:center;box-shadow:var(--sh-1)}
+.stat dt{font-family:var(--font-display);font-size:clamp(28px,6vw,40px);color:var(--brand-700);font-weight:700;
+  font-variant-numeric:tabular-nums}
+.stat dd{margin:var(--s-2) 0 0;font-size:13.5px;color:var(--n-600)}
+
+/* ------------ FAQ ------------ */
+.faq{display:grid;gap:var(--s-3);max-width:860px}
+.faq details{border:1px solid var(--line);border-radius:var(--r-md);background:var(--n-0);overflow:hidden}
+.faq details[open]{border-color:var(--n-300);box-shadow:var(--sh-1)}
+.faq summary{list-style:none;cursor:pointer;padding:var(--s-4) var(--s-5);display:flex;
+  justify-content:space-between;align-items:center;gap:var(--s-4);
+  font-weight:600;color:var(--brand-700);font-size:16px;min-height:56px}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"";flex:none;width:11px;height:11px;border-right:2px solid var(--n-450);
+  border-bottom:2px solid var(--n-450);transform:rotate(45deg) translateY(-3px);
+  transition:transform var(--dur-mid) var(--ease-out)}
+.faq details[open] summary::after{transform:rotate(-135deg) translateY(-3px)}
+.faq .faq__a{padding:0 var(--s-5) var(--s-5);color:var(--n-600);font-size:15px}
+
+/* ------------ Contact ------------ */
+.contact-grid{display:grid;gap:var(--s-6)}
+@media (min-width:1000px){.contact-grid{grid-template-columns:1fr 1.1fr;gap:var(--s-8)}}
+.field{display:grid;gap:var(--s-2);margin-bottom:var(--s-4)}
+.field label{font-size:13.5px;font-weight:650;color:var(--n-700)}
+.field label .req{color:var(--err)}
+.field input,.field select,.field textarea{width:100%;padding:var(--s-3) var(--s-4);min-height:48px;
+  border:1.5px solid var(--n-450);border-radius:var(--r-md);background:var(--n-0);
+  transition:border-color var(--dur-fast) var(--ease-out),box-shadow var(--dur-fast) var(--ease-out)}
+.field textarea{min-height:110px;resize:vertical}
+.field input:hover,.field select:hover,.field textarea:hover{border-color:var(--n-600)}
+.field input:focus,.field select:focus,.field textarea:focus{border-color:var(--brand-500);
+  box-shadow:0 0 0 3px rgba(138,84,51,.18);outline:none}
+.field .hint{font-size:12.5px;color:var(--n-600)}
+.field .err{font-size:12.5px;color:var(--err);font-weight:600;display:none}
+.field[data-invalid="true"] input,.field[data-invalid="true"] select{border-color:var(--err)}
+.field[data-invalid="true"] .err{display:block}
+
+.contact-list{display:grid;gap:var(--s-4)}
+.contact-item{display:flex;gap:var(--s-4);padding:var(--s-4);border-radius:var(--r-md);
+  border:1px solid var(--line);background:var(--n-0)}
+.contact-item svg{flex:none;width:20px;height:20px;color:var(--brand-600);margin-top:3px}
+.contact-item strong{display:block;font-size:13px;letter-spacing:.06em;text-transform:uppercase;
+  color:var(--n-600);font-weight:700;margin-bottom:2px}
+.contact-item a{font-weight:600;text-decoration:none}
+.contact-item a:hover{text-decoration:underline}
+
+.map{position:relative;aspect-ratio:16/11;border-radius:var(--r-lg);overflow:hidden;
+  border:1px solid var(--line);background:var(--n-100)}
+.map iframe{width:100%;height:100%;border:0;display:block}
+.map__facade{position:absolute;inset:0;display:grid;place-items:center;gap:var(--s-3);
+  background:linear-gradient(150deg,var(--n-100),var(--n-200));text-align:center;padding:var(--s-5)}
+.map__facade p{font-size:14px;color:var(--n-600);max-width:36ch}
+
+/* ------------ Footer ------------ */
+.footer{background:var(--ink-950);color:var(--n-400);padding-block:var(--s-8) var(--s-6);
+  padding-bottom:calc(var(--s-8) + 76px)}
+@media (min-width:768px){.footer{padding-bottom:var(--s-6)}}
+.footer h3{font-size:13px;letter-spacing:.1em;text-transform:uppercase;color:var(--brass-300);
+  font-family:var(--font-body);font-weight:700;margin-bottom:var(--s-4)}
+.footer a{color:var(--n-300);text-decoration:none;font-size:14.5px}
+.footer a:hover{color:var(--brass-300);text-decoration:underline}
+.footer li+li{margin-top:var(--s-3)}
+.footer__grid{display:grid;gap:var(--s-6)}
+@media (min-width:768px){.footer__grid{grid-template-columns:1.4fr 1fr 1fr 1.2fr}}
+.footer__bottom{margin-top:var(--s-7);padding-top:var(--s-5);border-top:1px solid rgba(255,255,255,.1);
+  display:flex;flex-wrap:wrap;gap:var(--s-3);justify-content:space-between;font-size:13px;color:var(--n-400)}
+
+/* ------------ Mobile sticky action bar (thumb zone) ------------ */
+.actionbar{position:fixed;left:0;right:0;bottom:0;z-index:90;display:grid;grid-template-columns:repeat(3,1fr);
+  gap:1px;background:var(--line);border-top:1px solid var(--line);
+  padding-bottom:env(safe-area-inset-bottom);
+  transform:translateY(110%);transition:transform var(--dur-slow) var(--ease-out)}
+.actionbar[data-show="true"]{transform:none}
+@media (min-width:768px){.actionbar{display:none}}
+.actionbar a{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:2px;
+  min-height:60px;background:var(--n-0);text-decoration:none;color:var(--brand-700);
+  font-size:11.5px;font-weight:650;letter-spacing:.02em}
+.actionbar a svg{width:19px;height:19px}
+.actionbar a.is-wa{background:#107C69;color:#fff}
+.actionbar a.is-primary{background:var(--brand-600);color:#fff}
+
+/* ------------ Scroll reveal ------------ */
+@media (prefers-reduced-motion:no-preference){
+  [data-reveal]{opacity:0;transform:translateY(18px);
+    transition:opacity var(--dur-slow) var(--ease-out),transform var(--dur-slow) var(--ease-out);
+    transition-delay:var(--d,0ms);will-change:opacity,transform}
+  [data-reveal].is-in{opacity:1;transform:none}
+}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *,*::before,*::after{animation-duration:.001ms!important;animation-iteration-count:1!important;
+    transition-duration:.001ms!important}
+}
+
+/* ------------ Review panel (content QA aid, not part of the public UI) ------------ */
+.review{position:fixed;right:var(--s-4);bottom:88px;z-index:130;width:min(92vw,360px);max-height:60vh;
+  overflow:auto;background:var(--ink-900);color:var(--n-300);border:1px solid var(--brass-500);
+  border-radius:var(--r-lg);padding:var(--s-5);box-shadow:var(--sh-3);display:none;font-size:13px}
+.review[data-open="true"]{display:block}
+.review h4{color:var(--brass-300);font-family:var(--font-body);font-size:13px;letter-spacing:.08em;
+  text-transform:uppercase;margin:0 0 var(--s-3)}
+.review li{padding:var(--s-2) 0;border-bottom:1px solid rgba(255,255,255,.08)}
+.review code{color:var(--brass-300)}
+
+@media print{
+  .header,.drawer,.actionbar,.lb,.review,.scroll-hint{display:none!important}
+  body{color:#000}
+  .section{padding-block:16px;break-inside:avoid}
+}
+</style>
+</head>
+
+<body>
+<a class="skip" href="#main">Skip to main content</a>
+
+<!-- =========================================================
+     HEADER
+     ========================================================= -->
+<header class="header" id="header">
+  <div class="container">
+    <a class="brand" href="#top" aria-label="Yadunanand Ahir Boarding, Rajkot — home">
+      <span class="brand-mark" aria-hidden="true">
+        <img class="brand-img" src="assets/brand/emblem.png" alt="" width="80" height="80"
+             decoding="async" fetchpriority="high">
+        અ
+      </span>
+      <span class="brand-txt">
+        <strong>Yadunanand</strong>
+        <span>Ahir Boarding · Rajkot</span>
+      </span>
+    </a>
+
+    <nav class="nav" aria-label="Primary">
+      <a href="#about">About</a>
+      <a href="#facilities">Facilities</a>
+      <a href="#rooms">Rooms</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#fees">Fees</a>
+      <a href="#admission">Admission</a>
+      <a href="#faq">FAQ</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <div style="display:flex;align-items:center;gap:12px">
+      <a class="btn btn--primary header-cta" href="#admission">Apply for Admission</a>
+      <button class="burger" id="burger" aria-expanded="false" aria-controls="drawer" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+  <div class="scrollbar" id="scrollbar" aria-hidden="true"></div>
+</header>
+
+<!-- Mobile drawer -->
+<div class="drawer" id="drawer" data-open="false" role="dialog" aria-modal="true" aria-label="Site menu">
+  <div class="drawer__scrim" data-close></div>
+  <div class="drawer__panel">
+    <div class="drawer__head">
+      <span class="brand-txt"><strong style="font-size:17px">Menu</strong></span>
+      <button class="drawer__close" data-close aria-label="Close menu">&times;</button>
+    </div>
+    <a href="#about">About the Boarding</a>
+    <a href="#why">Why Choose Us</a>
+    <a href="#facilities">Facilities</a>
+    <a href="#rooms">Room Types</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#food">Food &amp; Dining</a>
+    <a href="#study">Study Environment</a>
+    <a href="#routine">Daily Routine</a>
+    <a href="#rules">Rules &amp; Discipline</a>
+    <a href="#fees">Fees Structure</a>
+    <a href="#admission">Admission Process</a>
+    <a href="#eligibility">Eligibility &amp; Documents</a>
+    <a href="#voices">Testimonials</a>
+    <a href="#faq">FAQ</a>
+    <a href="#contact">Contact</a>
+    <div class="drawer__foot">
+      <a class="btn btn--primary btn--block" href="#admission">Apply for Admission</a>
+      <a class="btn btn--wa btn--block" data-wa href="#contact">Chat on WhatsApp</a>
+    </div>
+  </div>
+</div>
+
+<main id="main">
+<span id="top"></span>
+
+<!-- =========================================================
+     1. HERO
+     ========================================================= -->
+<section class="hero on-dark" aria-labelledby="hero-h">
+  <div class="hero__bg">
+    <img class="ph" alt=""
+         src="assets/images/building-dusk.jpg"
+         width="1852" height="853" fetchpriority="high" decoding="async"
+         data-shot="HERO — the supplied dusk photograph of the building, lit, with the Gujarati name sign glowing. Landscape, min 1852×853.">
+  </div>
+  <div class="hero__veil" aria-hidden="true"></div>
+
+  <div class="container hero__inner">
+    <span class="pill"><span class="dot" aria-hidden="true"></span> Admissions open for <span class="pending" title="Placeholder — confirm the current academic session">the current session</span></span>
+
+    <p class="hero__motto">Discipline &middot; Education &middot; Excellence</p>
+    <h1 id="hero-h">A disciplined home<em>for students who came to Rajkot to study.</em></h1>
+
+    <p class="hero__sub">
+      Yadunanand Ahir Boarding is a residential boarding run for students studying in Rajkot — safe, supervised,
+      and built around one thing: a routine that protects study hours. Clean rooms, home-style meals,
+      a quiet study hall, and parents who always know what is happening.
+    </p>
+
+    <div class="hero__actions">
+      <a class="btn btn--brass" href="#admission">Apply for Admission</a>
+      <a class="btn btn--ghost" href="#gallery">See the Boarding</a>
+    </div>
+
+    <dl class="hero__trust">
+      <div><dt class="pending" title="Placeholder — confirm year of establishment">Est. —</dt><dd>Serving students since</dd></div>
+      <div><dt class="pending" title="Placeholder — confirm total student capacity">— seats</dt><dd>Total capacity</dd></div>
+      <div><dt>24×7</dt><dd>Warden on campus</dd></div>
+      <div><dt>CCTV</dt><dd>Monitored premises</dd></div>
+    </dl>
+
+    <span class="scroll-hint">
+      Scroll
+      <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 5v14M6 13l6 6 6-6"/></svg>
+    </span>
+  </div>
+</section>
+
+<!-- =========================================================
+     2. ABOUT
+     ========================================================= -->
+<section class="section" id="about" aria-labelledby="about-h">
+  <div class="container">
+    <div class="split">
+      <div data-reveal>
+        <span class="eyebrow">About the boarding</span>
+        <h2 class="h-sec" id="about-h">A boarding, not a paying-guest room.</h2>
+        <p class="lede">
+          A hostel gives a student a bed. A boarding gives them a structure — fixed study hours,
+          fixed meal times, a warden who notices when someone stops attending college, and rules
+          that are the same for everyone.
+        </p>
+        <p class="lede">
+          Yadunanand Ahir Boarding was established by the community in Rajkot so that students from villages and
+          smaller towns could study here without their families worrying about where they live, what
+          they eat, or who they are with. That is still exactly what we do.
+        </p>
+        <ul class="checks">
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>
+            <span>Run by <strong lang="gu">શ્રી યદુનંદન આહીર કેળવણી મંડળ</strong> — the Ahir education society — not for profit</span></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>
+            <span>Resident warden on the premises at all times</span></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>
+            <span>Attendance and leave recorded — parents are informed</span></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>
+            <span>Walking / short-ride distance from <span class="pending" title="Placeholder — confirm nearby colleges and distances">major colleges in Rajkot</span></span></li>
+        </ul>
+        <div style="margin-top:32px;display:flex;gap:12px;flex-wrap:wrap">
+          <a class="btn btn--primary" href="#contact">Book a Visit</a>
+          <a class="btn btn--ghost" href="#rules">Read Our Rules</a>
+        </div>
+      </div>
+
+      <div class="split__media" data-reveal style="--d:90ms">
+        <div class="frame r-4-3">
+          <img class="ph" loading="lazy" decoding="async" width="1200" height="900"
+               src="assets/images/about-campus.jpg" alt="The Ahir Boarding campus in Rajkot"
+               data-shot="ABOUT — the campus courtyard or main entrance with the name board visible. 4:3, min 1200×900.">
+        </div>
+        <div class="grid grid-2" style="margin-top:16px">
+          <div class="frame r-1-1">
+            <img class="ph" loading="lazy" decoding="async" width="600" height="600"
+                 src="assets/images/about-warden.jpg" alt="Warden's desk and register at the boarding"
+                 data-shot="ABOUT — warden's desk with the attendance register / reception counter. Square, min 600×600.">
+          </div>
+          <div class="frame r-1-1">
+            <img class="ph" loading="lazy" decoding="async" width="600" height="600"
+                 src="assets/images/about-noticeboard.jpg" alt="Notice board with the daily timetable"
+                 data-shot="ABOUT — notice board with timetable / rules sheet pinned. Square, min 600×600.">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="tribute" data-reveal>
+      <span class="tribute__seal" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M12 21s-7-4.4-7-9.6A4.2 4.2 0 0 1 12 8a4.2 4.2 0 0 1 7 3.4C19 16.6 12 21 12 21Z"/></svg>
+      </span>
+      <div>
+        <h3>Principal donor &mdash; <span lang="gu">મુખ્ય દાતાશ્રી</span></h3>
+        <p class="gu" lang="gu">સ્વ. વાલજીભાઈ ભુલાભાઈ ખુમલા</p>
+        <p>
+          Late <span class="pending" title="Placeholder — confirm the English spelling of the donor's name before publishing">Valjibhai Bhulabhai Khumla</span>,
+          whose gift built this boarding. His name is on the building because the students living
+          here study on it. Every family admitted here benefits from that decision.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- =========================================================
+     3. WHY CHOOSE US
+     ========================================================= -->
+<section class="section section--alt" id="why" aria-labelledby="why-h">
+  <div class="container">
+    <div class="sec-head" data-reveal>
+      <span class="eyebrow">Why parents choose us</span>
+      <h2 class="h-sec" id="why-h">Six things we do not compromise on.</h2>
+      <p class="lede">Every one of these is checkable. Visit unannounced and see for yourself — that
+        offer is the point.</p>
+    </div>
+
+    <div class="grid grid-3">
+      <article class="card card--lift" data-reveal>
+        <span class="icon-badge" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10Z"/></svg></span>
+        <h3>Security that is actually enforced</h3>
+        <p>Entry register at the gate, CCTV on common areas and corridors, and a fixed in-time. Outsiders
+          do not enter the residential floors.</p>
+      </article>
+
+      <article class="card card--lift" data-reveal style="--d:60ms">
+        <span class="icon-badge" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19V5m0 14h16M8 15V9m4 6V7m4 8v-4"/></svg></span>
+        <h3>Study hours are protected</h3>
+        <p>Two fixed silent study sessions every day in a dedicated hall. Phones and noise stay out of
+          it — that rule is the reason the hall works.</p>
+      </article>
+
+      <article class="card card--lift" data-reveal style="--d:120ms">
+        <span class="icon-badge" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 3v9a3 3 0 0 0 6 0V3M10 12v9M17 3c-1.5 3-1.5 6 0 9v9"/></svg></span>
+        <h3>Pure vegetarian, home-style food</h3>
+        <p>Fixed weekly menu, published in advance. Same kitchen, same food for everyone — and the mess
+          is open for parents to inspect.</p>
+      </article>
+
+      <article class="card card--lift" data-reveal>
+        <span class="icon-badge" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 21h18M6 21V8l6-5 6 5v13M10 21v-6h4v6"/></svg></span>
+        <h3>Cleanliness is a daily routine</h3>
+        <p>Rooms, bathrooms and common areas cleaned every day on a written schedule. Water tanks and
+          RO units serviced on record.</p>
+      </article>
+
+      <article class="card card--lift" data-reveal style="--d:60ms">
+        <span class="icon-badge" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 8v5l3 2"/><circle cx="12" cy="12" r="9"/></svg></span>
+        <h3>Discipline without harshness</h3>
+        <p>Clear rules, told to the student on day one, applied equally. Warnings go to parents before
+          anything escalates — no surprises.</p>
+      </article>
+
+      <article class="card card--lift" data-reveal style="--d:120ms">
+        <span class="icon-badge" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 6h16M4 12h16M4 18h10"/></svg></span>
+        <h3>Fees with nothing hidden</h3>
+        <p>One published fee. Written receipt for every payment. What is included and what is not is
+          listed openly in the fees section below.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- =========================================================
+     4. FACILITIES
+     ========================================================= -->
+<section class="section" id="facilities" aria-labelledby="fac-h">
+  <div class="container">
+    <div class="sec-head" data-reveal>
+      <span class="eyebrow">Complete facilities</span>
+      <h2 class="h-sec" id="fac-h">Everything on the campus, photographed as it is.</h2>
+      <p class="lede">No renders, no stock photos. Every image below is a real photograph of this
+        boarding. If something is under renovation, we say so.</p>
+    </div>
+
+    <div class="grid grid-3">
+      <article class="card fac card--lift" data-reveal>
+        <div class="frame r-16-10"><img class="ph" loading="lazy" decoding="async" width="800" height="500"
+          src="assets/images/fac-rooms.jpg" alt="A student room with beds, cupboards and study tables"
+          data-shot="FACILITY — student room: beds made, cupboards, study table, window light. 16:10, min 800×500."></div>
+        <div class="fac__body"><span class="fac__tag">Living</span><h3>Furnished Rooms</h3>
+          <p>Cot, mattress, personal cupboard with lock, study table and chair per student. Fans and
+            tube lights in every room.</p></div>
+      </article>
+
+      <article class="card fac card--lift" data-reveal style="--d:60ms">
+        <div class="frame r-16-10"><img class="ph" loading="lazy" decoding="async" width="800" height="500"
+          src="assets/images/study-hall.jpg" alt="The study hall, with rows of partitioned individual study desks"
+          data-shot="FACILITY — the supplied study hall photograph: rows of partitioned wooden carrels. 16:10 crop."></div>
+        <div class="fac__body"><span class="fac__tag">Academics</span><h3>Silent Study Hall</h3>
+          <p>Not shared tables — a partitioned wooden carrel for each student, with its own light
+            point and power socket. Supervised during study hours.</p></div>
+      </article>
+
+      <article class="card fac card--lift" data-reveal style="--d:120ms">
+        <div class="frame r-16-10"><img class="ph" loading="lazy" decoding="async" width="800" height="500"
+          src="assets/images/fac-library.jpg" alt="Library shelves and reading area"
+          data-shot="FACILITY — library / reading corner with books, newspapers, seating. 16:10, min 800×500."></div>
+        <div class="fac__body"><span class="fac__tag">Academics</span><h3>Library &amp; Reading Room</h3>
+          <p>Reference books, competitive-exam material and daily newspapers. <span class="pending" title="Placeholder — confirm library timings">Timings to be confirmed.</span></p></div>
+      </article>
+
+      <article class="card fac card--lift" data-reveal>
+        <div class="frame r-16-10"><img class="ph" loading="lazy" decoding="async" width="800" height="500"
+          src="assets/images/fac-mess.jpg" alt="The dining hall with steel tables"
+          data-shot="FACILITY — dining hall during a meal, clean tables, serving counter. 16:10, min 800×500."></div>
+        <div class="fac__body"><span class="fac__tag">Food</span><h3>Dining Hall &amp; Mess</h3>
+          <p>Pure vegetarian kitchen and a dining hall that seats the whole boarding in shifts. Fixed
+            meal timings, published menu.</p></div>
+      </article>
+
+      <article class="card fac card--lift" data-reveal style="--d:60ms">
+        <div class="frame r-16-10"><img class="ph" loading="lazy" decoding="async" width="800" height="500"
+          src="assets/images/fac-kitchen.jpg" alt="The boarding kitchen"
+          data-shot="FACILITY — kitchen: clean cooking area, covered storage, staff in place. 16:10, min 800×500."></div>
+        <div class="fac__body"><span class="fac__tag">Food</span><h3>Hygienic Kitchen</h3>
+          <p>Open for parents to inspect. Covered storage, separate washing area, and staff who follow
+            a written cleaning schedule.</p></div>
+      </article>
+
+      <article class="card fac card--lift" data-reveal style="--d:120ms">
+        <div class="frame r-16-10"><img class="ph" loading="lazy" decoding="async" width="800" height="500"
+          src="assets/images/fac-water.jpg" alt="RO water purifier and water cooler"
+          data-shot="FACILITY — RO purifier + water cooler station. 16:10, min 800×500."></div>
+        <div class="fac__body"><span class="fac__tag">Health</span><h3>RO Drinking Water</h3>
+          <p>RO-purified drinking water with cooling, available on every floor. Filters changed on a
+            maintained service record.</p></div>
+      </article>
+
+      <article class="card fac card--lift" data-reveal>
+        <div class="frame r-16-10"><img class="ph" loading="lazy" decoding="async" width="800" height="500"
+          src="assets/images/fac-washroom.jpg" alt="Clean washrooms and bathing area"
+          data-shot="FACILITY — washroom / bathing area, clean and dry, taken respectfully. 16:10, min 800×500."></div>
+        <div class="fac__body"><span class="fac__tag">Living</span><h3>Bathrooms &amp; Washing</h3>
+          <p>Indian and Western toilets, bathing areas with <span class="pending" title="Placeholder — confirm hot water availability and timings">hot water</span>, and a dedicated
+            clothes-washing and drying area.</p></div>
+      </article>
+
+      <article class="card fac card--lift" data-reveal style="--d:60ms">
+        <div class="frame r-16-10"><img class="ph" loading="lazy" decoding="async" width="800" height="500"
+          src="assets/images/fac-cctv.jpg" alt="CCTV camera in a corridor"
+          data-shot="FACILITY — CCTV camera in corridor, or the DVR monitor at the warden's desk. 16:10, min 800×500."></div>
+        <div class="fac__body"><span class="fac__tag">Safety</span><h3>CCTV &amp; Gate Security</h3>
+          <p>Cameras on entry, corridors and common areas. Gate register for every entry and exit
+            after in-time.</p></div>
+      </article>
+
+      <article class="card fac card--lift" data-reveal style="--d:120ms">
+        <div class="frame r-16-10"><img class="ph" loading="lazy" decoding="async" width="800" height="500"
+          src="assets/images/fac-power.jpg" alt="Power backup inverter installation"
+          data-shot="FACILITY — inverter / generator installation. 16:10, min 800×500."></div>
+        <div class="fac__body"><span class="fac__tag">Utilities</span><h3>Power Backup</h3>
+          <p>Backup for lights and fans in study areas and rooms so a power cut does not end the study
+            session.</p></div>
+      </article>
+
+      <article class="card fac card--lift" data-reveal>
+        <div class="frame r-16-10"><img class="ph" loading="lazy" decoding="async" width="800" height="500"
+          src="assets/images/fac-wifi.jpg" alt="Students using the Wi-Fi enabled study area"
+          data-shot="FACILITY — router/network point, or students studying with laptops. 16:10, min 800×500."></div>
+        <div class="fac__body"><span class="fac__tag">Academics</span><h3>Wi-Fi Connectivity</h3>
+          <p><span class="pending" title="Placeholder — confirm whether Wi-Fi is provided, where, and during which hours">Availability and hours to be confirmed.</span> Where provided, it is for study use during
+            permitted hours.</p></div>
+      </article>
+
+      <article class="card fac card--lift" data-reveal style="--d:60ms">
+        <div class="frame r-16-10"><img class="ph" loading="lazy" decoding="async" width="800" height="500"
+          src="assets/images/ground-aerial.jpg" alt="Students playing volleyball on the boarding's walled ground"
+          data-shot="FACILITY — the walled ground with the volleyball net up and students playing (the aerial photo supplied by the boarding, cropped to 16:10)."></div>
+        <div class="fac__body"><span class="fac__tag">Wellbeing</span><h3>Open Ground &amp; Sports</h3>
+          <p>A walled ground with a laid cricket pitch and a volleyball court, floodlit along the
+            boundary so evening play carries on after dark. An hour outdoors is part of the
+            routine, not an extra.</p></div>
+      </article>
+
+      <article class="card fac card--lift" data-reveal style="--d:60ms">
+        <div class="frame r-16-10"><img class="ph" loading="lazy" decoding="async" width="800" height="500"
+          src="assets/images/corridor.jpg" alt="Corridor with a marked fire exit and wall-mounted fire extinguishers"
+          data-shot="FACILITY — the supplied corridor photograph, showing the marked fire exit, extinguishers and ceiling CCTV. 16:10 crop."></div>
+        <div class="fac__body"><span class="fac__tag">Safety</span><h3>Fire Safety</h3>
+          <p>Wall-mounted extinguishers along every corridor and clearly marked fire exits on each
+            floor — signed and reachable, not stored in an office.</p></div>
+      </article>
+
+      <article class="card fac card--lift" data-reveal style="--d:120ms">
+        <div class="frame r-16-10"><img class="ph" loading="lazy" decoding="async" width="800" height="500"
+          src="assets/images/fac-firstaid.jpg" alt="First aid box and medical corner"
+          data-shot="FACILITY — first-aid cabinet / sick room bed. 16:10, min 800×500."></div>
+        <div class="fac__body"><span class="fac__tag">Health</span><h3>First Aid &amp; Medical Help</h3>
+          <p>First-aid on site and a tie-up for medical emergencies. Parents are called immediately in
+            any medical situation.</p></div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- =========================================================
+     5. ROOM TYPES
+     ========================================================= -->
+<section class="section section--parchment" id="rooms" aria-labelledby="rooms-h">
+  <div class="container">
+    <div class="sec-head" data-reveal>
+      <span class="eyebrow">Room types</span>
+      <h2 class="h-sec" id="rooms-h">Pick the room that suits the student.</h2>
+      <p class="lede">Every room type gets the same food, the same facilities and the same rules. Only
+        the sharing count changes.</p>
+    </div>
+
+    <div class="grid grid-3">
+      <article class="card room card--lift" data-reveal>
+        <div class="frame r-4-3"><img class="ph" loading="lazy" decoding="async" width="800" height="600"
+          src="assets/images/room-shared.jpg" alt="Shared room with multiple beds"
+          data-shot="ROOM — multi-sharing room, wide angle showing all beds and cupboards. 4:3, min 800×600."></div>
+        <div class="room__body">
+          <h3>Shared Room</h3>
+          <div class="room__meta"><span class="chip"><span class="pending" title="Placeholder — confirm number of students per shared room">— sharing</span></span><span class="chip">Cupboard each</span><span class="chip">Study table</span></div>
+          <p style="font-size:15px;color:var(--n-600)">The most common choice. Cot, mattress, personal
+            lockable cupboard and a study table for each student.</p>
+          <div class="room__price"><span class="pending" title="Placeholder — confirm annual fee for shared room">₹— / year</span><small>Including mess &amp; utilities — to be confirmed</small></div>
+        </div>
+      </article>
+
+      <article class="card room card--lift" data-reveal style="--d:60ms">
+        <div class="frame r-4-3"><img class="ph" loading="lazy" decoding="async" width="800" height="600"
+          src="assets/images/room-double.jpg" alt="Two-sharing room"
+          data-shot="ROOM — two-sharing room with two beds and two study tables. 4:3, min 800×600."></div>
+        <div class="room__body">
+          <h3>Two Sharing</h3>
+          <div class="room__meta"><span class="chip">2 students</span><span class="chip">More space</span><span class="chip">Study table</span></div>
+          <p style="font-size:15px;color:var(--n-600)">More quiet and more storage for students in
+            final years or preparing for competitive exams.</p>
+          <div class="room__price"><span class="pending" title="Placeholder — confirm annual fee for two sharing">₹— / year</span><small>Including mess &amp; utilities — to be confirmed</small></div>
+        </div>
+      </article>
+
+      <article class="card room card--lift" data-reveal style="--d:120ms">
+        <div class="frame r-4-3"><img class="ph" loading="lazy" decoding="async" width="800" height="600"
+          src="assets/images/room-single.jpg" alt="Single occupancy room"
+          data-shot="ROOM — single room with one bed, table and cupboard. 4:3, min 800×600."></div>
+        <div class="room__body">
+          <h3>Single Room</h3>
+          <div class="room__meta"><span class="chip">1 student</span><span class="chip pending" title="Placeholder — confirm whether single rooms exist and how many">Limited availability</span></div>
+          <p style="font-size:15px;color:var(--n-600)">Allotted on request and availability, usually
+            for senior students. Please ask before applying.</p>
+          <div class="room__price"><span class="pending" title="Placeholder — confirm annual fee for single room">₹— / year</span><small>Including mess &amp; utilities — to be confirmed</small></div>
+        </div>
+      </article>
+    </div>
+
+    <p style="margin-top:24px;font-size:14.5px;color:var(--n-600)" data-reveal>
+      Room allotment is done by the management at the time of admission. Students may request a change
+      once, in writing, subject to availability.
+    </p>
+  </div>
+</section>
+
+<!-- =========================================================
+     6. GALLERY
+     ========================================================= -->
+<section class="section" id="gallery" aria-labelledby="gal-h">
+  <div class="container">
+    <div class="sec-head" data-reveal>
+      <span class="eyebrow">Hostel gallery</span>
+      <h2 class="h-sec" id="gal-h">Look around before you decide.</h2>
+      <p class="lede">Tap any photo to open it full size. These are the same spaces you will see if you
+        walk in tomorrow.</p>
+    </div>
+
+    <div class="gallery" id="gallery-grid" data-reveal>
+      <button type="button" aria-label="Open photo: building exterior">
+        <div class="frame r-1-1"><img class="ph" loading="lazy" decoding="async" width="1000" height="1000"
+          src="assets/images/gal-01.jpg" alt="Boarding building exterior"
+          data-shot="GALLERY 1 (large tile) — full building exterior with name board. Square crop, min 1000×1000."></div>
+      </button>
+      <button type="button" aria-label="Open photo: corridor">
+        <div class="frame r-1-1"><img class="ph" loading="lazy" decoding="async" width="600" height="600"
+          src="assets/images/corridor.jpg" alt="Residential corridor with marked fire exit" data-shot="GALLERY 2 — the supplied corridor photograph. Square crop."></div>
+      </button>
+      <button type="button" aria-label="Open photo: study hall in use">
+        <div class="frame r-1-1"><img class="ph" loading="lazy" decoding="async" width="600" height="600"
+          src="assets/images/gal-03.jpg" alt="Study hall during study hours" data-shot="GALLERY 3 — study hall occupied during study hours. Square, min 600×600."></div>
+      </button>
+      <button type="button" aria-label="Open photo: dining hall">
+        <div class="frame r-1-1"><img class="ph" loading="lazy" decoding="async" width="600" height="600"
+          src="assets/images/gal-04.jpg" alt="Dining hall at meal time" data-shot="GALLERY 4 — dining hall at meal time. Square, min 600×600."></div>
+      </button>
+      <button type="button" aria-label="Open photo: student room">
+        <div class="frame r-1-1"><img class="ph" loading="lazy" decoding="async" width="600" height="600"
+          src="assets/images/gal-05.jpg" alt="A student room" data-shot="GALLERY 5 — student room, made bed, tidy desk. Square, min 600×600."></div>
+      </button>
+      <button type="button" aria-label="Open photo: evening ground">
+        <div class="frame r-1-1"><img class="ph" loading="lazy" decoding="async" width="1000" height="1000"
+          src="assets/images/ground-cricket.jpg" alt="The cricket pitch and open field on the campus"
+          data-shot="GALLERY 6 (large tile) — the supplied cricket-pitch photograph. Square crop."></div>
+      </button>
+      <button type="button" aria-label="Open photo: prayer or assembly">
+        <div class="frame r-1-1"><img class="ph" loading="lazy" decoding="async" width="600" height="600"
+          src="assets/images/gal-07.jpg" alt="Morning assembly" data-shot="GALLERY 7 — morning assembly / prayer gathering. Square, min 600×600."></div>
+      </button>
+      <button type="button" aria-label="Open photo: library">
+        <div class="frame r-1-1"><img class="ph" loading="lazy" decoding="async" width="600" height="600"
+          src="assets/images/gal-08.jpg" alt="Library reading area" data-shot="GALLERY 8 — library reading area. Square, min 600×600."></div>
+      </button>
+      <button type="button" aria-label="Open photo: annual function">
+        <div class="frame r-1-1"><img class="ph" loading="lazy" decoding="async" width="600" height="600"
+          src="assets/images/gal-09.jpg" alt="Annual function on campus" data-shot="GALLERY 9 — annual function / festival celebration on campus. Square, min 600×600."></div>
+      </button>
+      <button type="button" aria-label="Open photo: washing area">
+        <div class="frame r-1-1"><img class="ph" loading="lazy" decoding="async" width="600" height="600"
+          src="assets/images/gal-10.jpg" alt="Washing and drying area" data-shot="GALLERY 10 — clothes washing / drying area. Square, min 600×600."></div>
+      </button>
+    </div>
+  </div>
+</section>
+
+<!-- Lightbox -->
+<div class="lb" id="lightbox" role="dialog" aria-modal="true" aria-label="Photo viewer" data-open="false">
+  <div class="lb__bar"><button class="lb__btn" id="lb-close" aria-label="Close photo viewer">&times;</button></div>
+  <button class="lb__btn lb__nav lb__nav--prev" id="lb-prev" aria-label="Previous photo">&#8249;</button>
+  <button class="lb__btn lb__nav lb__nav--next" id="lb-next" aria-label="Next photo">&#8250;</button>
+  <figure>
+    <div class="frame r-16-10" id="lb-frame"></div>
+    <figcaption id="lb-cap"></figcaption>
+  </figure>
+</div>
+
+<!-- =========================================================
+     7. FOOD & DINING
+     ========================================================= -->
+<section class="section section--alt" id="food" aria-labelledby="food-h">
+  <div class="container">
+    <div class="split split--flip">
+      <div class="split__media" data-reveal>
+        <div class="frame r-4-3">
+          <img class="ph" loading="lazy" decoding="async" width="1200" height="900"
+               src="assets/images/food-thali.jpg" alt="A standard meal thali served at the boarding"
+               data-shot="FOOD — an actual served thali on a mess table: rotli, shaak, dal, bhaat, salad. 4:3, min 1200×900.">
+        </div>
+      </div>
+      <div data-reveal style="--d:90ms">
+        <span class="eyebrow">Food &amp; dining</span>
+        <h2 class="h-sec" id="food-h">Gujarati vegetarian food, on a fixed weekly menu.</h2>
+        <p class="lede">
+          Students eat the same food the staff eats. The menu is decided in advance and put up on the
+          notice board, so nobody wonders what is being served or whether the quality drops mid-month.
+        </p>
+        <ul class="checks">
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg><span>100% pure vegetarian — no exceptions, anywhere on campus</span></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg><span>Four servings a day: breakfast, lunch, evening tea/snack, dinner</span></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg><span>Unlimited rotli, dal and bhaat at main meals</span></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg><span>Special meal on festivals and on <span class="pending" title="Placeholder — confirm which days have a special menu">designated days</span></span></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg><span>Sick students get simple food (khichdi) on request</span></li>
+        </ul>
+
+        <div class="table-wrap" style="margin-top:32px">
+          <table>
+            <caption><span>Meal timings — <span class="pending" title="Placeholder — confirm all four meal timings with the mess in-charge">all timings below are placeholders pending confirmation</span></span></caption>
+            <thead><tr><th scope="col">Meal</th><th scope="col">Timing</th><th scope="col">Typically served</th></tr></thead>
+            <tbody>
+              <tr><th scope="row">Breakfast</th><td class="num pending" title="Placeholder">— : —</td><td>Rotating breakfast menu with tea/milk</td></tr>
+              <tr><th scope="row">Lunch</th><td class="num pending" title="Placeholder">— : —</td><td>Rotli, shaak, dal, bhaat, salad, chhas</td></tr>
+              <tr><th scope="row">Evening snack</th><td class="num pending" title="Placeholder">— : —</td><td>Tea with a light snack</td></tr>
+              <tr><th scope="row">Dinner</th><td class="num pending" title="Placeholder">— : —</td><td>Rotli, shaak, dal, bhaat, sweet on fixed days</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="table-hint">
+          <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          Swipe the table sideways to see every column.
+        </p>
+        <p style="margin-top:16px;font-size:14.5px;color:var(--n-600)">
+          Students who miss a meal because of college or exam timings should inform the mess in-charge
+          in advance so food is kept aside.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- =========================================================
+     8. STUDY ENVIRONMENT
+     ========================================================= -->
+<section class="section" id="study" aria-labelledby="study-h">
+  <div class="container">
+    <div class="split">
+      <div data-reveal>
+        <span class="eyebrow">Study environment</span>
+        <h2 class="h-sec" id="study-h">The reason a boarding beats a rented room.</h2>
+        <p class="lede">
+          A student living alone decides every night whether to study. Here, that decision is already
+          made — the hall is open, everyone is in it, and the phone is not.
+        </p>
+        <ul class="checks">
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg><span><strong>Two supervised study sessions daily</strong> — morning and night, in the study hall</span></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg><span><strong>Your own desk, not a shared table</strong> — a partitioned carrel per student, so nobody is studying in somebody else's line of sight</span></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg><span><strong>Silence is enforced</strong> — no phones, no conversation, no music in the hall</span></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg><span><strong>Extra hours during exams</strong> — the hall stays open longer through the exam period</span></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg><span><strong>Seniors help juniors</strong> — informally, and it is encouraged</span></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg><span><strong>Result review</strong> — <span class="pending" title="Placeholder — confirm whether results/marksheets are collected and reviewed">policy on collecting results to be confirmed</span></span></li>
+        </ul>
+      </div>
+      <div class="split__media" data-reveal style="--d:90ms">
+        <div class="frame r-4-3">
+          <img class="ph" loading="lazy" decoding="async" width="1200" height="900"
+               src="assets/images/study-hall.jpg" alt="The study hall, with partitioned individual study carrels"
+               data-shot="STUDY — the supplied study hall photograph. 4:3 crop.">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- =========================================================
+     8b. CAMPUS BAND — full-bleed real photograph
+     ========================================================= -->
+<section class="band" aria-labelledby="band-h">
+  <img class="ph" loading="lazy" decoding="async" width="1852" height="853"
+       src="assets/images/ground-aerial.jpg"
+       alt="Aerial view of the boarding's walled ground, with students playing volleyball and open fields beyond"
+       data-shot="CAMPUS BAND — the supplied aerial photograph of the ground, full width. Roughly 21:9, min 1852×853.">
+  <div class="band__cap">
+    <h2 id="band-h">Evening ground time.</h2>
+    <p>A walled, floodlit ground inside the campus — so an hour outdoors does not mean an hour
+      outside the gate.</p>
+  </div>
+</section>
+
+<!-- =========================================================
+     9. DAILY ROUTINE
+     ========================================================= -->
+<section class="section section--parchment" id="routine" aria-labelledby="rout-h">
+  <div class="container">
+    <div class="sec-head" data-reveal>
+      <span class="eyebrow">Daily routine</span>
+      <h2 class="h-sec" id="rout-h">The same day, every day.</h2>
+      <p class="lede">
+        Predictability is the point. A student knows exactly what happens next, and so do their parents.
+        <strong>All timings below are placeholders</strong> — replace them with the boarding's actual timetable before publishing.
+      </p>
+    </div>
+
+    <div class="grid grid-2">
+      <ol class="timeline" data-reveal>
+        <li><time class="pending" title="Placeholder timing">5:30 AM</time><p>Wake-up bell</p></li>
+        <li><time class="pending" title="Placeholder timing">6:00 – 7:30 AM</time><p>Morning study session in the study hall</p></li>
+        <li><time class="pending" title="Placeholder timing">7:30 – 8:30 AM</time><p>Bath, get ready, breakfast</p></li>
+        <li><time class="pending" title="Placeholder timing">8:30 AM</time><p>Leave for college</p></li>
+        <li><time class="pending" title="Placeholder timing">12:30 – 2:00 PM</time><p>Lunch (for students free at this hour)</p></li>
+      </ol>
+      <ol class="timeline" data-reveal style="--d:90ms">
+        <li><time class="pending" title="Placeholder timing">5:30 PM</time><p>Return from college — attendance marked</p></li>
+        <li><time class="pending" title="Placeholder timing">6:00 – 7:00 PM</time><p>Sports / ground time</p></li>
+        <li><time class="pending" title="Placeholder timing">7:30 PM</time><p>Dinner</p></li>
+        <li><time class="pending" title="Placeholder timing">8:30 – 10:30 PM</time><p>Night study session — silent hall</p></li>
+        <li><time class="pending" title="Placeholder timing">11:00 PM</time><p>Lights out</p></li>
+      </ol>
+    </div>
+  </div>
+</section>
+
+<!-- =========================================================
+     10. RULES & DISCIPLINE
+     ========================================================= -->
+<section class="section section--dark on-dark" id="rules" aria-labelledby="rules-h">
+  <div class="container">
+    <div class="sec-head" data-reveal>
+      <span class="eyebrow">Rules &amp; discipline</span>
+      <h2 class="h-sec" id="rules-h">We publish our rules before you apply, not after.</h2>
+      <p class="lede">
+        Read these with your son before applying. If any of them is a problem, this is not the right
+        place — and it is better to know that now.
+      </p>
+    </div>
+
+    <div class="rules">
+      <div class="rule" data-reveal><span class="rule__n">01</span><div><h3>Fixed in-time</h3><p>Every student must be inside the gate by the <span class="pending" title="Placeholder — confirm the daily in-time">stated in-time</span>. Late entry is recorded and reported to parents.</p></div></div>
+      <div class="rule" data-reveal style="--d:40ms"><span class="rule__n">02</span><div><h3>Leave requires written permission</h3><p>Going home or staying out overnight requires prior approval and a parent's confirmation.</p></div></div>
+      <div class="rule" data-reveal style="--d:80ms"><span class="rule__n">03</span><div><h3>Study hours are compulsory</h3><p>Attendance in both study sessions is mandatory. Repeated absence is treated as a disciplinary matter.</p></div></div>
+      <div class="rule" data-reveal style="--d:120ms"><span class="rule__n">04</span><div><h3>Zero tolerance: tobacco, alcohol, drugs</h3><p>Possession or use of any intoxicant results in immediate removal from the boarding. No warning, no refund.</p></div></div>
+      <div class="rule" data-reveal><span class="rule__n">05</span><div><h3>No outsiders on residential floors</h3><p>Visitors, including friends, meet in the visitors' area only, during visiting hours.</p></div></div>
+      <div class="rule" data-reveal style="--d:40ms"><span class="rule__n">06</span><div><h3>Respect for staff and students</h3><p>Ragging, bullying, casteist or abusive behaviour is a removal offence and will also be reported as required by law.</p></div></div>
+      <div class="rule" data-reveal style="--d:80ms"><span class="rule__n">07</span><div><h3>Care of property</h3><p>Damage to rooms, furniture or common property is recoverable from the student concerned.</p></div></div>
+      <div class="rule" data-reveal style="--d:120ms"><span class="rule__n">08</span><div><h3>Cleanliness of your own space</h3><p>Rooms are inspected. Students keep their bed, cupboard and desk in order; common areas are cleaned by staff.</p></div></div>
+      <div class="rule" data-reveal><span class="rule__n">09</span><div><h3>Phones during study hours</h3><p>Phones are not permitted inside the study hall during sessions. <span class="pending" title="Placeholder — confirm the exact mobile phone policy">Full policy to be confirmed.</span></p></div></div>
+      <div class="rule" data-reveal style="--d:40ms"><span class="rule__n">10</span><div><h3>Attendance at college is monitored</h3><p>Students found skipping college are reported to their parents the same week.</p></div></div>
+    </div>
+
+    <p style="margin-top:32px;color:var(--n-400);font-size:14.5px" data-reveal>
+      A signed copy of these rules is taken from both the student and the parent at the time of
+      admission. Serious breaches are decided by the management committee, whose decision is final.
+    </p>
+  </div>
+</section>
+
+<!-- =========================================================
+     11. FEES STRUCTURE
+     ========================================================= -->
+<section class="section" id="fees" aria-labelledby="fees-h">
+  <div class="container">
+    <div class="sec-head" data-reveal>
+      <span class="eyebrow">Fees structure</span>
+      <h2 class="h-sec" id="fees-h">One fee. Written receipt. No hidden charges.</h2>
+      <p class="lede">
+        <strong>Every amount on this page is a placeholder.</strong> Publish the real fee schedule here
+        exactly as approved by the management — parents compare this page against other boardings, and
+        an honest, complete table wins that comparison.
+      </p>
+    </div>
+
+    <div class="table-wrap" data-reveal>
+      <table>
+        <caption><span>Annual fee schedule for the <span class="pending" title="Placeholder — confirm academic session">current academic session</span></span></caption>
+        <thead>
+          <tr><th scope="col">Head</th><th scope="col">Amount</th><th scope="col">When payable</th><th scope="col">Notes</th></tr>
+        </thead>
+        <tbody>
+          <tr><th scope="row">Admission fee (one time)</th><td class="num pending" title="Placeholder amount">₹ —</td><td>At admission</td><td>Non-refundable</td></tr>
+          <tr><th scope="row">Security deposit (refundable)</th><td class="num pending" title="Placeholder amount">₹ —</td><td>At admission</td><td>Refunded on leaving, after deductions for damage</td></tr>
+          <tr><th scope="row">Boarding &amp; lodging — shared room</th><td class="num pending" title="Placeholder amount">₹ —</td><td class="pending" title="Placeholder — confirm instalment schedule">Instalments</td><td>Includes room, mess, electricity, water</td></tr>
+          <tr><th scope="row">Boarding &amp; lodging — two sharing</th><td class="num pending" title="Placeholder amount">₹ —</td><td class="pending" title="Placeholder">Instalments</td><td>Includes room, mess, electricity, water</td></tr>
+          <tr><th scope="row">Boarding &amp; lodging — single room</th><td class="num pending" title="Placeholder amount">₹ —</td><td class="pending" title="Placeholder">Instalments</td><td>Subject to availability</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="table-hint">
+      <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+      Swipe the table sideways to see every column.
+    </p>
+
+    <div class="grid grid-2" style="margin-top:32px">
+      <div class="card" data-reveal>
+        <h3 style="color:var(--ok)">Included in the fee</h3>
+        <ul class="checks" style="margin-top:16px">
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg><span>Room with cot, mattress, cupboard, study table</span></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg><span>All four meals, every day the boarding is open</span></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg><span>Electricity, water, RO drinking water</span></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg><span>Study hall, library and ground access</span></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg><span>Daily cleaning of rooms and common areas</span></li>
+        </ul>
+      </div>
+      <div class="card" data-reveal style="--d:60ms">
+        <h3 style="color:var(--err)">Not included</h3>
+        <ul class="checks" style="margin-top:16px">
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" style="color:var(--err)" aria-hidden="true"><path d="M18 6 6 18M6 6l12 12"/></svg><span>Personal laundry, toiletries and stationery</span></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" style="color:var(--err)" aria-hidden="true"><path d="M18 6 6 18M6 6l12 12"/></svg><span>Medical expenses beyond first aid</span></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" style="color:var(--err)" aria-hidden="true"><path d="M18 6 6 18M6 6l12 12"/></svg><span>Travel to and from college</span></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" style="color:var(--err)" aria-hidden="true"><path d="M18 6 6 18M6 6l12 12"/></svg><span>Damage caused to boarding property</span></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" style="color:var(--err)" aria-hidden="true"><path d="M18 6 6 18M6 6l12 12"/></svg><span>Food ordered from outside</span></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="card" style="margin-top:24px;border-left:4px solid var(--brass-500)" data-reveal>
+      <h3>Refund &amp; concession policy</h3>
+      <p style="margin-top:8px"><span class="pending" title="Placeholder — publish the actual refund policy and any fee concession or scholarship scheme">To be confirmed and published here.</span>
+        If the boarding offers a concession for students from low-income families, state it plainly —
+        families who need it often do not ask.</p>
+    </div>
+  </div>
+</section>
+
+<!-- =========================================================
+     12. ADMISSION PROCESS
+     ========================================================= -->
+<section class="section section--alt" id="admission" aria-labelledby="adm-h">
+  <div class="container">
+    <div class="sec-head" data-reveal>
+      <span class="eyebrow">Admission process</span>
+      <h2 class="h-sec" id="adm-h">Five steps, and you will know where you stand at each one.</h2>
+      <p class="lede">Admissions for the <span class="pending" title="Placeholder — confirm session and application window dates">current session</span> are open. Seats are limited and
+        allotted in order of completed applications.</p>
+    </div>
+
+    <ol class="steps">
+      <li class="step" data-reveal><h3>Enquire</h3><p>Call, WhatsApp, or send the enquiry form on this page. We reply with availability and the fee schedule.</p></li>
+      <li class="step" data-reveal style="--d:50ms"><h3>Visit the boarding</h3><p>Come and see the rooms, mess and study hall. Parents are encouraged to visit before applying.</p></li>
+      <li class="step" data-reveal style="--d:100ms"><h3>Submit the form</h3><p>Fill the admission form and attach the documents listed below. Incomplete forms are not queued.</p></li>
+      <li class="step" data-reveal style="--d:150ms"><h3>Interaction &amp; confirmation</h3><p>A short conversation with the student and parent about the rules, followed by confirmation of the seat.</p></li>
+      <li class="step" data-reveal style="--d:200ms"><h3>Pay &amp; move in</h3><p>Pay the fee against a written receipt, sign the rules undertaking, collect the room allotment and move in.</p></li>
+    </ol>
+
+    <div style="margin-top:40px;display:flex;gap:12px;flex-wrap:wrap" data-reveal>
+      <a class="btn btn--primary" href="#enquiry">Start Your Enquiry</a>
+      <a class="btn btn--wa" data-wa href="#contact">
+        <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15l-1.3 4.8 5-1.3A10 10 0 1 0 12 2Zm5.8 14.2c-.2.7-1.4 1.3-2 1.4-.5.1-1.2.1-1.9-.1-.4-.1-1-.3-1.8-.6-3.2-1.4-5.2-4.6-5.4-4.8-.2-.2-1.3-1.7-1.3-3.2s.8-2.3 1.1-2.6c.3-.3.6-.4.8-.4h.6c.2 0 .5 0 .7.5l.9 2.2c.1.2.1.4 0 .6l-.4.6-.3.3c-.1.1-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.2 1 2.1 1.4 2.4 1.5.3.1.5.1.7-.1l.9-1c.2-.2.4-.2.6-.1l2.1 1c.3.1.5.2.5.4.1.2.1.9-.1 1.5Z"/></svg>
+        Ask on WhatsApp</a>
+    </div>
+  </div>
+</section>
+
+<!-- =========================================================
+     13. ELIGIBILITY + 14. DOCUMENTS
+     ========================================================= -->
+<section class="section" id="eligibility" aria-labelledby="elig-h">
+  <div class="container">
+    <div class="split">
+      <div data-reveal>
+        <span class="eyebrow">Eligibility</span>
+        <h2 class="h-sec" id="elig-h">Who can apply.</h2>
+        <p class="lede">Please confirm each of these before applying — it saves everyone a wasted trip.</p>
+        <ul class="checks">
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg><span><strong>This is a boys' hostel</strong> — <span lang="gu">કુમાર છાત્રાલય</span>. Admission is for male students only.</span></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg><span>Currently enrolled in a school, college or recognised course in Rajkot</span></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg><span><span class="pending" title="Placeholder — confirm the age or standard/year range accepted">Age / standard range accepted</span></span></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg><span><span class="pending" title="Placeholder — state clearly whether admission is open to all students or restricted to a community, and on what basis">Community / eligibility criterion, stated plainly</span></span></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg><span>Student and parent both agree in writing to the boarding rules</span></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg><span>No history of substance use or serious disciplinary action</span></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg><span>A local guardian contact in or near Rajkot, where possible</span></li>
+        </ul>
+      </div>
+
+      <div data-reveal style="--d:90ms">
+        <span class="eyebrow">Required documents</span>
+        <h2 class="h-sec">What to bring.</h2>
+        <p class="lede">Bring originals for verification and one photocopy of each to submit.</p>
+        <ol class="checks" style="counter-reset:doc">
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg><span>Completed and signed admission form</span></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg><span>Student's Aadhaar card (copy)</span></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg><span>Parent's / guardian's Aadhaar card (copy)</span></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg><span>College or school admission proof / fee receipt / ID card</span></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg><span>Last passed marksheet</span></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg><span><span class="pending" title="Placeholder — confirm exact number of photographs required">Passport-size photographs</span> of the student</span></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg><span>Signed rules undertaking (given at the office)</span></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg><span><span class="pending" title="Placeholder — confirm whether a medical certificate, blood group record or caste certificate is required">Any additional certificate required</span></span></li>
+        </ol>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- =========================================================
+     15. TESTIMONIALS — honest empty state, no invented quotes
+     ========================================================= -->
+<section class="section section--parchment" id="voices" aria-labelledby="voices-h">
+  <div class="container">
+    <div class="sec-head" data-reveal>
+      <span class="eyebrow">Students &amp; parents</span>
+      <h2 class="h-sec" id="voices-h">Real words from real families — coming soon.</h2>
+      <p class="lede">
+        We would rather show nothing than show something invented. This section is built and ready;
+        it goes live the moment we have signed, verifiable testimonials from current students and
+        their parents.
+      </p>
+    </div>
+
+    <div class="grid grid-3" data-reveal aria-hidden="true">
+      <div class="quote-skeleton"><div class="bar"></div><div class="bar"></div><div class="bar"></div><div class="who"><div class="av"></div><div style="flex:1"><div class="bar" style="width:60%"></div></div></div></div>
+      <div class="quote-skeleton"><div class="bar"></div><div class="bar"></div><div class="bar"></div><div class="who"><div class="av"></div><div style="flex:1"><div class="bar" style="width:60%"></div></div></div></div>
+      <div class="quote-skeleton"><div class="bar"></div><div class="bar"></div><div class="bar"></div><div class="who"><div class="av"></div><div style="flex:1"><div class="bar" style="width:60%"></div></div></div></div>
+    </div>
+
+    <div class="empty-state" style="margin-top:24px" data-reveal>
+      <h3>For the boarding management</h3>
+      <p>Collect 6–8 testimonials before publishing this section. For each one you need: the person's
+        full name, their relationship (student / parent), the student's course and year, a photograph
+        if they consent, and written permission to publish. A named parent from a known village is
+        worth more than twenty anonymous five-star quotes.</p>
+      <p><strong>Do not publish anything that cannot be verified by a phone call.</strong></p>
+    </div>
+  </div>
+</section>
+
+<!-- =========================================================
+     16. ACHIEVEMENTS
+     ========================================================= -->
+<section class="section" id="achievements" aria-labelledby="ach-h">
+  <div class="container">
+    <div class="sec-head" data-reveal>
+      <span class="eyebrow">Achievements</span>
+      <h2 class="h-sec" id="ach-h">What our students have gone on to do.</h2>
+      <p class="lede">Numbers here must come from the boarding's own records. Each figure below is a
+        placeholder until it can be backed by a register, a marksheet or an appointment letter.</p>
+    </div>
+
+    <dl class="grid grid-4" data-reveal>
+      <div class="stat"><dt class="pending" title="Placeholder — confirm from records">—</dt><dd>Years serving students in Rajkot</dd></div>
+      <div class="stat"><dt class="pending" title="Placeholder — confirm from records">—</dt><dd>Students who have lived here</dd></div>
+      <div class="stat"><dt class="pending" title="Placeholder — confirm from records">—</dt><dd>Students currently in residence</dd></div>
+      <div class="stat"><dt class="pending" title="Placeholder — confirm from records">—</dt><dd>Alumni in government service</dd></div>
+    </dl>
+
+    <div class="grid grid-2" style="margin-top:24px">
+      <div class="empty-state" data-reveal>
+        <h3>Notable results</h3>
+        <p>List real, checkable outcomes: students who cleared GPSC/UPSC or a competitive exam, secured
+          university ranks, or completed professional degrees while living here. Name, year and course
+          for each — no round-number claims.</p>
+      </div>
+      <div class="frame r-16-10" data-reveal style="--d:60ms">
+        <img class="ph" loading="lazy" decoding="async" width="800" height="500"
+             src="assets/images/achievements-felicitation.jpg" alt="Felicitation of students at the boarding"
+             data-shot="ACHIEVEMENTS — felicitation ceremony, prize distribution, or the trophy shelf. 16:10, min 800×500.">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- =========================================================
+     17. FAQ
+     ========================================================= -->
+<section class="section section--alt" id="faq" aria-labelledby="faq-h">
+  <div class="container">
+    <div class="sec-head" data-reveal>
+      <span class="eyebrow">FAQ</span>
+      <h2 class="h-sec" id="faq-h">The questions parents actually ask.</h2>
+    </div>
+
+    <div class="faq" data-reveal>
+      <details>
+        <summary>Can we visit before applying?</summary>
+        <div class="faq__a">Yes, and we would prefer it. Come during working hours, see the rooms, the
+          mess and the study hall, and talk to the warden. You do not need an appointment, though a
+          call ahead helps us make sure someone is free to show you around.</div>
+      </details>
+      <details>
+        <summary>Is the boarding only for students of one community?</summary>
+        <div class="faq__a"><span class="pending" title="Placeholder — answer this plainly and accurately; parents ask it first">This must be answered plainly and accurately by the management.</span>
+          Whatever the answer is, stating it clearly here saves families from a wasted journey.</div>
+      </details>
+      <details>
+        <summary>How is my son's safety ensured?</summary>
+        <div class="faq__a">A warden lives on the premises. There is a fixed in-time recorded in the
+          gate register, CCTV coverage of entry points, corridors and common areas, and outsiders are
+          not permitted on residential floors.</div>
+      </details>
+      <details>
+        <summary>What if my son falls ill?</summary>
+        <div class="faq__a">First aid is available on site and simple food is provided on request. For
+          anything beyond that, we take the student to a doctor and inform parents immediately — not
+          afterwards.</div>
+      </details>
+      <details>
+        <summary>Can students go home on weekends?</summary>
+        <div class="faq__a">Yes, with prior written permission and a parent's confirmation. Departure
+          and return are entered in the register. <span class="pending" title="Placeholder — confirm the leave policy and any limits">Exact leave policy to be confirmed.</span></div>
+      </details>
+      <details>
+        <summary>Are mobile phones allowed?</summary>
+        <div class="faq__a">Phones are not permitted inside the study hall during study sessions.
+          <span class="pending" title="Placeholder — confirm the full mobile phone policy including night hours">The full policy, including night hours, is to be confirmed.</span></div>
+      </details>
+      <details>
+        <summary>Is the fee payable in instalments?</summary>
+        <div class="faq__a"><span class="pending" title="Placeholder — confirm the instalment schedule and due dates">To be confirmed.</span> Every payment, in any form,
+          is issued against a written receipt.</div>
+      </details>
+      <details>
+        <summary>What happens if a student breaks the rules?</summary>
+        <div class="faq__a">Minor breaches get a warning, and parents are informed. Repeated breaches
+          go to the management committee. Tobacco, alcohol, drugs and ragging result in immediate
+          removal without refund — that is stated at admission and applied without exception.</div>
+      </details>
+      <details>
+        <summary>How far is the boarding from the main colleges?</summary>
+        <div class="faq__a"><span class="pending" title="Placeholder — list nearby colleges with real distances or travel times">List the nearby colleges with actual distances or travel times.</span>
+          This is one of the strongest reasons a family chooses one boarding over another.</div>
+      </details>
+      <details>
+        <summary>Is there a waiting list if seats are full?</summary>
+        <div class="faq__a">Yes. Completed applications are queued in order of submission, and we call
+          the moment a seat opens. Submitting early materially improves your chances.</div>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- =========================================================
+     18. CONTACT + MAP + WHATSAPP
+     ========================================================= -->
+<section class="section" id="contact" aria-labelledby="con-h">
+  <div class="container">
+    <div class="sec-head" data-reveal>
+      <span class="eyebrow">Contact &amp; visit</span>
+      <h2 class="h-sec" id="con-h">Talk to us directly.</h2>
+      <p class="lede">You will speak to someone who actually runs the boarding — not a call centre.</p>
+    </div>
+
+    <div class="contact-grid">
+      <div data-reveal>
+        <div class="contact-list">
+          <div class="contact-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.2a2 2 0 0 1 2.1-.5c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2Z"/></svg>
+            <div><strong>Phone</strong><a data-tel href="tel:">
+              <span class="pending" title="Placeholder — insert the official contact number">+91 — — — — —</span></a>
+              <div style="font-size:13px;color:var(--n-600);margin-top:2px">Office hours <span class="pending" title="Placeholder — confirm office hours">to be confirmed</span></div></div>
+          </div>
+          <div class="contact-item">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15l-1.3 4.8 5-1.3A10 10 0 1 0 12 2Zm5.8 14.2c-.2.7-1.4 1.3-2 1.4-.5.1-1.2.1-1.9-.1-.4-.1-1-.3-1.8-.6-3.2-1.4-5.2-4.6-5.4-4.8-.2-.2-1.3-1.7-1.3-3.2s.8-2.3 1.1-2.6c.3-.3.6-.4.8-.4h.6c.2 0 .5 0 .7.5l.9 2.2c.1.2.1.4 0 .6l-.4.6-.3.3c-.1.1-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.2 1 2.1 1.4 2.4 1.5.3.1.5.1.7-.1l.9-1c.2-.2.4-.2.6-.1l2.1 1c.3.1.5.2.5.4.1.2.1.9-.1 1.5Z"/></svg>
+            <div><strong>WhatsApp</strong><a data-wa href="#">Message us for availability</a>
+              <div style="font-size:13px;color:var(--n-600);margin-top:2px">Fastest way to get a reply</div></div>
+          </div>
+          <div class="contact-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m2 7 10 6 10-6"/></svg>
+            <div><strong>Email</strong><a data-email href="mailto:">
+              <span class="pending" title="Placeholder — insert the official email address">office@—.—</span></a></div>
+          </div>
+          <div class="contact-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+            <div><strong>Address</strong>
+              <address style="font-style:normal;font-weight:600;color:var(--brand-600)">
+                <span class="pending" title="Placeholder — insert the full postal address with landmark and pincode">Full address with landmark, Rajkot, Gujarat — PIN</span>
+              </address></div>
+          </div>
+        </div>
+
+        <div class="map" style="margin-top:24px" id="map">
+          <div class="map__facade" id="map-facade">
+            <svg viewBox="0 0 24 24" width="34" height="34" fill="none" stroke="var(--brand-600)" stroke-width="1.6" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+            <p>The map loads only when you ask for it — so this page stays fast on mobile data.</p>
+            <button class="btn btn--ghost" id="map-load" type="button">Load Google Map</button>
+          </div>
+        </div>
+      </div>
+
+      <div id="enquiry" data-reveal style="--d:90ms">
+        <form class="card" id="enquiry-form" novalidate style="padding:32px">
+          <h3 style="font-size:22px">Admission enquiry</h3>
+          <p style="font-size:14.5px;color:var(--n-600);margin:8px 0 24px">
+            Fill this in and it opens a pre-written WhatsApp message to us — nothing is stored on this
+            website.
+          </p>
+
+          <div class="field">
+            <label for="f-name">Student's full name <span class="req" aria-hidden="true">*</span></label>
+            <input id="f-name" name="name" type="text" autocomplete="name" required aria-describedby="e-name">
+            <span class="err" id="e-name">Please enter the student's name.</span>
+          </div>
+
+          <div class="field">
+            <label for="f-phone">Parent's mobile number <span class="req" aria-hidden="true">*</span></label>
+            <input id="f-phone" name="phone" type="tel" inputmode="numeric" autocomplete="tel"
+                   required pattern="[0-9+\s-]{10,15}" aria-describedby="e-phone h-phone">
+            <span class="hint" id="h-phone">10-digit Indian mobile number</span>
+            <span class="err" id="e-phone">Please enter a valid mobile number.</span>
+          </div>
+
+          <div class="field">
+            <label for="f-course">College / course the student is joining</label>
+            <input id="f-course" name="course" type="text">
+          </div>
+
+          <div class="field">
+            <label for="f-room">Room preference</label>
+            <select id="f-room" name="room">
+              <option value="No preference">No preference</option>
+              <option value="Shared room">Shared room</option>
+              <option value="Two sharing">Two sharing</option>
+              <option value="Single room">Single room</option>
+            </select>
+          </div>
+
+          <div class="field">
+            <label for="f-msg">Anything you want to ask</label>
+            <textarea id="f-msg" name="message" rows="3" placeholder="Fees, visit timing, seat availability…"></textarea>
+          </div>
+
+          <button class="btn btn--wa btn--block" type="submit">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15l-1.3 4.8 5-1.3A10 10 0 1 0 12 2Zm5.8 14.2c-.2.7-1.4 1.3-2 1.4-.5.1-1.2.1-1.9-.1-.4-.1-1-.3-1.8-.6-3.2-1.4-5.2-4.6-5.4-4.8-.2-.2-1.3-1.7-1.3-3.2s.8-2.3 1.1-2.6c.3-.3.6-.4.8-.4h.6c.2 0 .5 0 .7.5l.9 2.2c.1.2.1.4 0 .6l-.4.6-.3.3c-.1.1-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.2 1 2.1 1.4 2.4 1.5.3.1.5.1.7-.1l.9-1c.2-.2.4-.2.6-.1l2.1 1c.3.1.5.2.5.4.1.2.1.9-.1 1.5Z"/></svg>
+            Send Enquiry on WhatsApp
+          </button>
+          <p role="status" aria-live="polite" id="form-status" style="font-size:13.5px;color:var(--n-600);margin-top:12px"></p>
+          <p style="font-size:13px;color:var(--n-600);margin-top:8px">
+            Prefer to call? <a data-tel href="tel:">Phone the office</a> during working hours.
+          </p>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- =========================================================
+     19. FOOTER
+     ========================================================= -->
+<footer class="footer on-dark">
+  <div class="container">
+    <div class="footer__grid">
+      <div>
+        <a href="#top" aria-label="Yadunanand Ahir Boarding, Rajkot — back to top" style="display:inline-block">
+          <img class="logo-lockup ph" src="assets/brand/logo.png"
+               alt="Yadunanand Ahir Boarding — Discipline, Education, Excellence"
+               width="400" height="400" loading="lazy" decoding="async"
+               data-shot="BRAND — the full logo lockup on a transparent background (the emblem, the name, and the Discipline · Education · Excellence ribbon).">
+        </a>
+        <p style="margin-top:8px;font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--brass-300)">
+          Discipline &middot; Education &middot; Excellence
+        </p>
+        <p style="margin-top:16px;font-size:14.5px;color:var(--n-400);max-width:38ch">
+          A residential boarding for students studying in Rajkot — run with discipline, transparency
+          and care, by <span lang="gu">શ્રી યદુનંદન આહીર કેળવણી મંડળ</span>.
+        </p>
+      </div>
+
+      <nav aria-label="Footer — about">
+        <h3>The Boarding</h3>
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#why">Why Choose Us</a></li>
+          <li><a href="#facilities">Facilities</a></li>
+          <li><a href="#rooms">Room Types</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#achievements">Achievements</a></li>
+        </ul>
+      </nav>
+
+      <nav aria-label="Footer — admissions">
+        <h3>Admissions</h3>
+        <ul>
+          <li><a href="#fees">Fees Structure</a></li>
+          <li><a href="#admission">Admission Process</a></li>
+          <li><a href="#eligibility">Eligibility &amp; Documents</a></li>
+          <li><a href="#rules">Rules &amp; Discipline</a></li>
+          <li><a href="#routine">Daily Routine</a></li>
+          <li><a href="#faq">FAQ</a></li>
+        </ul>
+      </nav>
+
+      <div>
+        <h3>Reach Us</h3>
+        <ul>
+          <li><a data-tel href="tel:"><span class="pending" title="Placeholder — insert phone number">+91 — — — — —</span></a></li>
+          <li><a data-wa href="#">WhatsApp the office</a></li>
+          <li><a data-email href="mailto:"><span class="pending" title="Placeholder — insert email">office@—.—</span></a></li>
+          <li style="color:var(--n-400);font-size:14.5px"><span class="pending" title="Placeholder — insert full address">Full address, Rajkot, Gujarat</span></li>
+        </ul>
+        <a class="btn btn--brass" href="#admission" style="margin-top:20px">Apply for Admission</a>
+      </div>
+    </div>
+
+    <div class="footer__bottom">
+      <span>&copy; <span id="year">2026</span> Yadunanand Ahir Boarding, Rajkot. All rights reserved.</span>
+      <span>Built for students and their families.</span>
+    </div>
+  </div>
+</footer>
+
+<!-- Mobile sticky action bar -->
+<nav class="actionbar" id="actionbar" aria-label="Quick actions">
+  <a data-tel href="tel:">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.2a2 2 0 0 1 2.1-.5c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2Z"/></svg>
+    Call
+  </a>
+  <a class="is-wa" data-wa href="#contact">
+    <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15l-1.3 4.8 5-1.3A10 10 0 1 0 12 2Zm5.8 14.2c-.2.7-1.4 1.3-2 1.4-.5.1-1.2.1-1.9-.1-.4-.1-1-.3-1.8-.6-3.2-1.4-5.2-4.6-5.4-4.8-.2-.2-1.3-1.7-1.3-3.2s.8-2.3 1.1-2.6c.3-.3.6-.4.8-.4h.6c.2 0 .5 0 .7.5l.9 2.2c.1.2.1.4 0 .6l-.4.6-.3.3c-.1.1-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.2 1 2.1 1.4 2.4 1.5.3.1.5.1.7-.1l.9-1c.2-.2.4-.2.6-.1l2.1 1c.3.1.5.2.5.4.1.2.1.9-.1 1.5Z"/></svg>
+    WhatsApp
+  </a>
+  <a class="is-primary" href="#admission">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8Z"/><path d="M14 2v6h6M9 15h6"/></svg>
+    Apply
+  </a>
+</nav>
+
+<!-- Content QA panel — open with ?review=1 or Alt+P -->
+<aside class="review" id="review" data-open="false" aria-label="Content checklist">
+  <h4>Content still to confirm</h4>
+  <ul id="review-list"></ul>
+  <p style="margin-top:12px;color:var(--n-400)">Every item marked <span class="pending">like this ◇</span>
+    on the page is a placeholder. Replace it with verified information before publishing.</p>
+</aside>
+
+<script>
+/* =========================================================
+   SITE CONFIG — edit these four values and the whole site's
+   call / WhatsApp / email / map links update at once.
+   ========================================================= */
+const SITE = {
+  phone:    "",   // e.g. "+919999999999"  — leave "" until confirmed
+  whatsapp: "",   // digits only, with country code, e.g. "919999999999"
+  email:    "",   // e.g. "office@ahirboardingrajkot.org"
+  mapQuery: "Yadunanand Ahir Boarding, Rajkot, Gujarat" // exact Google Maps search string or plus-code
+};
+
+/* The image-placeholder fallback is registered in <head> so it catches the
+   eager hero image as well. */
+
+document.addEventListener("DOMContentLoaded", function () {
+  const $  = (s, r) => (r || document).querySelector(s);
+  const $$ = (s, r) => Array.from((r || document).querySelectorAll(s));
+  const reduced = matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+  $("#year").textContent = new Date().getFullYear();
+
+  /* ---- Contact links from SITE ---- */
+  if (SITE.phone) $$("[data-tel]").forEach(a => a.href = "tel:" + SITE.phone);
+  if (SITE.email) $$("[data-email]").forEach(a => a.href = "mailto:" + SITE.email);
+  const waLink = (text) => SITE.whatsapp
+    ? "https://wa.me/" + SITE.whatsapp + (text ? "?text=" + encodeURIComponent(text) : "")
+    : null;
+  $$("[data-wa]").forEach(a => {
+    const url = waLink("Hello, I would like to enquire about admission at Yadunanand Ahir Boarding, Rajkot.");
+    if (url) { a.href = url; a.target = "_blank"; a.rel = "noopener"; }
+  });
+
+  /* ---- Header state + scroll progress (transform only) ---- */
+  const header = $("#header"), bar = $("#scrollbar"), actionbar = $("#actionbar");
+  let ticking = false;
+  function onScroll() {
+    if (ticking) return;
+    ticking = true;
+    requestAnimationFrame(() => {
+      const y = scrollY;
+      const max = document.documentElement.scrollHeight - innerHeight;
+      header.dataset.stuck = y > 8 ? "true" : "false";
+      bar.style.transform = "scaleX(" + (max > 0 ? y / max : 0) + ")";
+      actionbar.dataset.show = y > 400 ? "true" : "false";
+      ticking = false;
+    });
+  }
+  addEventListener("scroll", onScroll, { passive: true });
+  onScroll();
+
+  /* ---- Mobile drawer with focus trap ---- */
+  const drawer = $("#drawer"), burger = $("#burger");
+  let lastFocus = null;
+  function setDrawer(open) {
+    drawer.dataset.open = String(open);
+    burger.setAttribute("aria-expanded", String(open));
+    burger.setAttribute("aria-label", open ? "Close menu" : "Open menu");
+    document.body.dataset.lock = String(open);
+    if (open) { lastFocus = document.activeElement; $(".drawer__close", drawer).focus(); }
+    else if (lastFocus) lastFocus.focus();
+  }
+  burger.addEventListener("click", () => setDrawer(drawer.dataset.open !== "true"));
+  $$("[data-close]", drawer).forEach(el => el.addEventListener("click", () => setDrawer(false)));
+  $$("a", drawer).forEach(a => a.addEventListener("click", () => setDrawer(false)));
+
+  function trap(container, e) {
+    const f = $$('a[href],button:not([disabled]),input,select,textarea,[tabindex]:not([tabindex="-1"])', container)
+                .filter(el => el.offsetParent !== null);
+    if (!f.length) return;
+    const first = f[0], last = f[f.length - 1];
+    if (e.shiftKey && document.activeElement === first) { e.preventDefault(); last.focus(); }
+    else if (!e.shiftKey && document.activeElement === last) { e.preventDefault(); first.focus(); }
+  }
+
+  /* ---- Scroll reveal ---- */
+  const revealables = $$("[data-reveal]");
+  if (reduced || !("IntersectionObserver" in window)) {
+    revealables.forEach(el => el.classList.add("is-in"));
+  } else {
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach(en => {
+        if (en.isIntersecting) { en.target.classList.add("is-in"); io.unobserve(en.target); }
+      });
+    }, { rootMargin: "0px 0px -8% 0px", threshold: 0.06 });
+    revealables.forEach(el => io.observe(el));
+  }
+
+  /* ---- Nav scroll-spy ---- */
+  const navLinks = $$(".nav a");
+  const targets = navLinks.map(a => $(a.getAttribute("href"))).filter(Boolean);
+  if ("IntersectionObserver" in window && targets.length) {
+    const spy = new IntersectionObserver((entries) => {
+      entries.forEach(en => {
+        if (!en.isIntersecting) return;
+        navLinks.forEach(a => a.removeAttribute("aria-current"));
+        const link = navLinks.find(a => a.getAttribute("href") === "#" + en.target.id);
+        if (link) link.setAttribute("aria-current", "true");
+      });
+    }, { rootMargin: "-45% 0px -50% 0px" });
+    targets.forEach(t => spy.observe(t));
+  }
+
+  /* ---- Lightbox ---- */
+  const lb = $("#lightbox"), lbFrame = $("#lb-frame"), lbCap = $("#lb-cap");
+  const shots = $$("#gallery-grid button");
+  let idx = 0, lbLast = null;
+
+  function renderShot(i) {
+    idx = (i + shots.length) % shots.length;
+    const src = shots[idx].querySelector("img, .ph-fallback");
+    lbFrame.innerHTML = "";
+    if (src && src.tagName === "IMG") {
+      const img = document.createElement("img");
+      img.src = src.currentSrc || src.src;
+      img.alt = src.alt || "";
+      lbFrame.append(img);
+      lbCap.textContent = src.alt || "";
+    } else {
+      const clone = src ? src.cloneNode(true) : document.createElement("div");
+      lbFrame.append(clone);
+      const alt = src ? src.getAttribute("data-alt") : "";
+      lbCap.textContent = (alt ? alt + " — " : "") + "photograph pending.";
+    }
+  }
+  function openLb(i) {
+    lbLast = document.activeElement;
+    renderShot(i);
+    lb.dataset.open = "true";
+    document.body.dataset.lock = "true";
+    $("#lb-close").focus();
+  }
+  function closeLb() {
+    lb.dataset.open = "false";
+    document.body.dataset.lock = "false";
+    if (lbLast) lbLast.focus();
+  }
+  shots.forEach((b, i) => b.addEventListener("click", () => openLb(i)));
+  $("#lb-close").addEventListener("click", closeLb);
+  $("#lb-prev").addEventListener("click", () => renderShot(idx - 1));
+  $("#lb-next").addEventListener("click", () => renderShot(idx + 1));
+  lb.addEventListener("click", (e) => { if (e.target === lb) closeLb(); });
+
+  /* ---- Global keyboard handling ---- */
+  addEventListener("keydown", (e) => {
+    if (e.key === "Escape") {
+      if (lb.dataset.open === "true") closeLb();
+      else if (drawer.dataset.open === "true") setDrawer(false);
+    }
+    if (e.key === "Tab") {
+      if (lb.dataset.open === "true") trap(lb, e);
+      else if (drawer.dataset.open === "true") trap($(".drawer__panel", drawer), e);
+    }
+    if (lb.dataset.open === "true") {
+      if (e.key === "ArrowRight") renderShot(idx + 1);
+      if (e.key === "ArrowLeft")  renderShot(idx - 1);
+    }
+    if (e.altKey && (e.key === "p" || e.key === "P")) toggleReview();
+  });
+
+  /* ---- Map facade (loads only on request) ---- */
+  const mapBtn = $("#map-load");
+  if (mapBtn) mapBtn.addEventListener("click", () => {
+    const f = document.createElement("iframe");
+    f.src = "https://www.google.com/maps?q=" + encodeURIComponent(SITE.mapQuery) + "&output=embed";
+    f.loading = "lazy";
+    f.title = "Location of Yadunanand Ahir Boarding, Rajkot on Google Maps";
+    f.referrerPolicy = "no-referrer-when-downgrade";
+    f.allowFullscreen = true;
+    $("#map-facade").replaceWith(f);
+  });
+
+  /* ---- Enquiry form → WhatsApp (no backend, nothing stored) ---- */
+  const form = $("#enquiry-form"), status = $("#form-status");
+  function setInvalid(input, bad) {
+    input.closest(".field").dataset.invalid = String(bad);
+    input.setAttribute("aria-invalid", String(bad));
+  }
+  form.addEventListener("submit", (e) => {
+    e.preventDefault();
+    const name = $("#f-name"), phone = $("#f-phone");
+    const badName = !name.value.trim();
+    const badPhone = !/^[0-9+\s-]{10,15}$/.test(phone.value.trim());
+    setInvalid(name, badName); setInvalid(phone, badPhone);
+    if (badName || badPhone) {
+      status.textContent = "Please correct the highlighted fields.";
+      (badName ? name : phone).focus();
+      return;
+    }
+    const msg =
+      "Admission enquiry — Yadunanand Ahir Boarding, Rajkot\n" +
+      "Student: " + name.value.trim() + "\n" +
+      "Parent's mobile: " + phone.value.trim() + "\n" +
+      "College / course: " + ($("#f-course").value.trim() || "-") + "\n" +
+      "Room preference: " + $("#f-room").value + "\n" +
+      "Message: " + ($("#f-msg").value.trim() || "-");
+    const url = waLink(msg);
+    if (!url) {
+      status.textContent =
+        "WhatsApp number is not configured yet. Please add it to SITE.whatsapp in index.html.";
+      return;
+    }
+    status.textContent = "Opening WhatsApp with your enquiry…";
+    window.open(url, "_blank", "noopener");
+  });
+  $$("#enquiry-form input").forEach(i =>
+    i.addEventListener("input", () => setInvalid(i, false)));
+
+  /* ---- Content QA panel ---- */
+  const review = $("#review");
+  function toggleReview() {
+    const open = review.dataset.open !== "true";
+    review.dataset.open = String(open);
+    if (open) buildReview();
+  }
+  function buildReview() {
+    const list = $("#review-list");
+    if (list.childElementCount) return;
+    const items = new Map();
+    $$(".pending").forEach(el => {
+      const key = el.getAttribute("title") || el.textContent.trim();
+      const sec = el.closest("section, footer, header");
+      const label = sec ? (sec.getAttribute("aria-labelledby")
+        ? (document.getElementById(sec.getAttribute("aria-labelledby")) || {}).textContent
+        : sec.id) : "page";
+      items.set(key, label || "page");
+    });
+    $$("img.ph").forEach(img => items.set("Photo: " + img.getAttribute("src"), "images"));
+    items.forEach((sec, key) => {
+      const li = document.createElement("li");
+      li.innerHTML = "<code>" + (sec || "").toString().trim() + "</code><br>" + key;
+      list.append(li);
+    });
+  }
+  if (new URLSearchParams(location.search).has("review")) toggleReview();
+});
+</script>
+
+<!-- Structured data. Only non-placeholder facts are included; add address,
+     telephone, geo and openingHours once confirmed. -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "EducationalOrganization",
+  "name": "Yadunanand Ahir Boarding",
+  "alternateName": "Yadunanand Ahir Boarding, Rajkot",
+  "slogan": "Discipline · Education · Excellence",
+  "description": "A residential boarding for students studying in Rajkot, offering supervised study hours, pure vegetarian meals, secure premises and transparent fees. Discipline, Education, Excellence.",
+  "url": "https://mediatedwithdeep-art.github.io/yadunandan-ahir-boarding/",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Rajkot",
+    "addressRegion": "Gujarat",
+    "addressCountry": "IN"
+  },
+  "parentOrganization": {
+    "@type": "Organization",
+    "name": "Shri Yadunandan Ahir Kelavani Mandal",
+    "alternateName": "શ્રી યદુનંદન આહીર કેળવણી મંડળ"
+  },
+  "amenityFeature": [
+    {"@type":"LocationFeatureSpecification","name":"Study hall","value":true},
+    {"@type":"LocationFeatureSpecification","name":"Library","value":true},
+    {"@type":"LocationFeatureSpecification","name":"Vegetarian mess","value":true},
+    {"@type":"LocationFeatureSpecification","name":"CCTV surveillance","value":true},
+    {"@type":"LocationFeatureSpecification","name":"RO drinking water","value":true},
+    {"@type":"LocationFeatureSpecification","name":"Power backup","value":true},
+    {"@type":"LocationFeatureSpecification","name":"Sports ground","value":true},
+    {"@type":"LocationFeatureSpecification","name":"Cricket pitch","value":true},
+    {"@type":"LocationFeatureSpecification","name":"Individual study carrels","value":true},
+    {"@type":"LocationFeatureSpecification","name":"Fire extinguishers and marked fire exits","value":true}
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {"@type":"Question","name":"Can we visit before applying?","acceptedAnswer":{"@type":"Answer","text":"Yes. Visit during working hours to see the rooms, mess and study hall and speak to the warden. A call ahead helps us make sure someone is free to show you around."}},
+    {"@type":"Question","name":"How is student safety ensured at the boarding?","acceptedAnswer":{"@type":"Answer","text":"A warden lives on the premises. There is a fixed in-time recorded in the gate register, CCTV coverage of entry points, corridors and common areas, and outsiders are not permitted on residential floors."}},
+    {"@type":"Question","name":"What happens if a student falls ill?","acceptedAnswer":{"@type":"Answer","text":"First aid is available on site and simple food is provided on request. For anything beyond that the student is taken to a doctor and parents are informed immediately."}},
+    {"@type":"Question","name":"What happens if a student breaks the rules?","acceptedAnswer":{"@type":"Answer","text":"Minor breaches receive a warning and parents are informed. Repeated breaches go to the management committee. Tobacco, alcohol, drugs and ragging result in immediate removal without refund."}},
+    {"@type":"Question","name":"Is there a waiting list if seats are full?","acceptedAnswer":{"@type":"Answer","text":"Yes. Completed applications are queued in order of submission and families are called as soon as a seat opens."}}
+  ]
+}
+</script>
+</body>
+</html>
