@@ -1,0 +1,695 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Yadunandan Ahir Boarding, Rajkot — Boarding, meals &amp; grounds for Ahir youth | ₹35,000/year</title>
+<meta name="description" content="Yadunandan Ahir Boarding — premium boarding for Ahir students on Kankot Road, Rajkot. Three meals daily, quiet reading hall, cricket ground and volleyball court. ₹35,000 per year, all inclusive. Call Rameshbhai Jilrya on +91 73845 40025." />
+<meta name="theme-color" content="#241A14" />
+
+<!-- Open Graph — replace og:image with a real 1200x630 campus photo before launch -->
+<meta property="og:title" content="Yadunandan Ahir Boarding, Rajkot — ₹35,000/year, all inclusive" />
+<meta property="og:description" content="Boarding, three meals a day, reading hall, cricket ground and volleyball court on Kankot Road, Rajkot." />
+<meta property="og:type" content="website" />
+
+<link rel="icon" href="logo.png" />
+<link rel="apple-touch-icon" href="logo.png" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+
+<style>
+/* ============================================================
+   TOKENS
+   ============================================================ */
+:root{
+  /* Colour — contrast ratios computed, see comments */
+  --espresso:#241A14;      /* 17.03:1 on white  — all primary text, primary buttons */
+  --bark:#6B4E3D;          /*  7.55:1 on white  — secondary/body-muted text (AA pass) */
+  --coffee:#C1A892;        /*  2.26:1 on white  — SURFACES & BORDERS ONLY, never text */
+  --sand:#D4C4B7;          /* card surfaces, dividers */
+  --linen:#FAF7F4;         /* section wash */
+  --white:#FFFFFF;
+  --line:rgba(36,26,20,.12);
+  --line-strong:rgba(36,26,20,.22);
+
+  /* Type */
+  --display:'Plus Jakarta Sans',system-ui,-apple-system,'Segoe UI',sans-serif;
+  --body:'Inter',system-ui,-apple-system,'Segoe UI',sans-serif;
+
+  /* Spacing scale: 4 8 12 16 24 32 48 64 96 128 */
+  --s1:4px; --s2:8px; --s3:12px; --s4:16px; --s6:24px; --s8:32px;
+  --s12:48px; --s16:64px; --s24:96px; --s32:128px;
+
+  --radius:18px;
+  --radius-sm:12px;
+  --shell:1200px;
+  --ease-out:cubic-bezier(.16,.84,.44,1);
+}
+
+/* ============================================================
+   BASE
+   ============================================================ */
+*,*::before,*::after{box-sizing:border-box;}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%;}
+body{
+  margin:0; background:var(--white); color:var(--espresso);
+  font-family:var(--body); font-size:17px; line-height:1.62;
+  -webkit-font-smoothing:antialiased; overflow-x:hidden;
+}
+img{max-width:100%;display:block;}
+a{color:inherit;}
+h1,h2,h3,h4{font-family:var(--display);margin:0;line-height:1.12;letter-spacing:-.022em;font-weight:700;}
+p{margin:0;}
+ul{margin:0;padding:0;list-style:none;}
+
+.shell{width:100%;max-width:var(--shell);margin-inline:auto;padding-inline:var(--s6);}
+.section{padding-block:var(--s24);}
+.section--tight{padding-block:var(--s16);}
+.section--wash{background:var(--linen);}
+
+.eyebrow{
+  font-family:var(--body);font-size:12px;font-weight:600;
+  letter-spacing:.16em;text-transform:uppercase;color:var(--bark);
+  display:flex;align-items:center;gap:var(--s3);margin-bottom:var(--s4);
+}
+.eyebrow::before{content:"";width:26px;height:1px;background:var(--coffee);flex:none;}
+
+.h2{font-size:clamp(30px,4.2vw,46px);max-width:19ch;}
+.lede{font-size:clamp(17px,1.6vw,19px);color:var(--bark);max-width:62ch;margin-top:var(--s4);}
+
+/* ============================================================
+   BUTTONS
+   ============================================================ */
+.btn{
+  display:inline-flex;align-items:center;justify-content:center;gap:10px;
+  font-family:var(--body);font-size:16px;font-weight:600;letter-spacing:-.005em;
+  padding:17px 28px;border-radius:999px;border:1px solid transparent;
+  text-decoration:none;cursor:pointer;white-space:nowrap;
+  transition:transform .15s var(--ease-out),background-color .15s var(--ease-out),
+             color .15s var(--ease-out),border-color .15s var(--ease-out),box-shadow .15s var(--ease-out);
+}
+.btn svg{width:18px;height:18px;flex:none;}
+.btn--primary{background:var(--espresso);color:var(--white);box-shadow:0 1px 2px rgba(36,26,20,.2);}
+.btn--primary:hover{transform:translateY(-2px);box-shadow:0 10px 24px -10px rgba(36,26,20,.55);}
+.btn--ghost{background:transparent;color:var(--espresso);border-color:var(--line-strong);}
+.btn--ghost:hover{background:var(--espresso);color:var(--white);border-color:var(--espresso);transform:translateY(-2px);}
+.btn--light{background:var(--white);color:var(--espresso);}
+.btn--light:hover{transform:translateY(-2px);box-shadow:0 10px 24px -10px rgba(0,0,0,.5);}
+.btn--sm{padding:11px 20px;font-size:14.5px;}
+a:focus-visible,button:focus-visible{outline:2.5px solid var(--espresso);outline-offset:3px;border-radius:999px;}
+
+/* ============================================================
+   HEADER
+   ============================================================ */
+.nav{
+  position:sticky;top:0;z-index:60;background:rgba(255,255,255,.86);
+  backdrop-filter:saturate(160%) blur(14px);border-bottom:1px solid var(--line);
+}
+.nav__in{display:flex;align-items:center;gap:var(--s6);height:72px;}
+.brand{display:flex;align-items:center;gap:var(--s3);text-decoration:none;margin-right:auto;}
+.brand__mark{width:52px;height:52px;object-fit:contain;flex:none;}
+.brand__name{display:block;font-family:var(--display);font-weight:700;font-size:17px;line-height:1.15;}
+.brand__sub{display:block;font-size:11.5px;color:var(--bark);letter-spacing:.13em;text-transform:uppercase;font-weight:600;}
+.nav__links{display:flex;align-items:center;gap:var(--s8);}
+.nav__links a{font-size:15px;font-weight:500;color:var(--bark);text-decoration:none;transition:color .15s var(--ease-out);}
+.nav__links a:hover{color:var(--espresso);}
+@media(max-width:940px){.nav__links{display:none;} .nav__cta{display:none;}}
+
+/* ============================================================
+   HERO — split screen
+   ============================================================ */
+.hero{border-bottom:1px solid var(--line);}
+.hero__grid{display:grid;grid-template-columns:1.05fr .95fr;gap:var(--s16);align-items:center;
+  padding-block:var(--s24) var(--s16);}
+.hero h1{font-size:clamp(40px,5.6vw,66px);font-weight:800;letter-spacing:-.032em;line-height:1.04;max-width:14ch;}
+.hero h1 em{font-style:normal;color:var(--bark);}
+.hero__sub{margin-top:var(--s6);font-size:clamp(17px,1.7vw,19.5px);color:var(--bark);max-width:52ch;}
+.hero__gu{margin-top:var(--s4);font-size:16px;color:var(--bark);}
+.hero__cta{display:flex;flex-wrap:wrap;gap:var(--s3);margin-top:var(--s8);}
+.hero__meta{display:flex;flex-wrap:wrap;gap:var(--s2) var(--s6);margin-top:var(--s8);
+  font-size:14.5px;color:var(--bark);font-weight:500;}
+.hero__meta span{display:flex;align-items:center;gap:8px;}
+.dot{width:6px;height:6px;border-radius:50%;background:var(--coffee);flex:none;}
+
+/* Image frame + placeholder */
+.frame{position:relative;border-radius:var(--radius);overflow:hidden;background:var(--sand);border:1px solid var(--line);}
+.frame--hero{aspect-ratio:4/5;}
+.frame img{width:100%;height:100%;object-fit:cover;}
+.frame__overlay{position:absolute;inset:0;background:linear-gradient(180deg,rgba(36,26,20,0) 42%,rgba(36,26,20,.72) 100%);}
+.frame__cap{position:absolute;left:var(--s6);right:var(--s6);bottom:var(--s6);color:var(--white);}
+.frame__cap strong{font-family:var(--display);font-size:19px;display:block;}
+.frame__cap span{font-size:14px;opacity:.85;}
+/* Placeholder styling — delete .ph rules once real photos are in */
+.ph{
+  position:absolute;inset:0;display:grid;place-content:center;gap:6px;text-align:center;padding:var(--s6);
+  background:
+    repeating-linear-gradient(135deg,rgba(36,26,20,.045) 0 12px,transparent 12px 24px),
+    linear-gradient(160deg,var(--sand),var(--coffee));
+  color:var(--espresso);
+}
+.ph b{font-family:var(--display);font-size:14px;letter-spacing:.1em;text-transform:uppercase;}
+.ph span{font-size:12.5px;color:var(--bark);max-width:26ch;margin-inline:auto;}
+
+@media(max-width:900px){
+  .hero__grid{grid-template-columns:1fr;gap:var(--s8);padding-block:var(--s12) var(--s12);}
+  .frame--hero{aspect-ratio:4/3;}
+  .hero h1{max-width:none;}
+}
+
+/* ============================================================
+   TRUST STRIP
+   ============================================================ */
+.strip{background:var(--espresso);color:var(--white);}
+.strip__in{display:grid;grid-template-columns:repeat(4,1fr);gap:var(--s6);padding-block:var(--s8);}
+.strip__item strong{display:block;font-family:var(--display);font-size:22px;font-weight:700;}
+.strip__item span{font-size:14px;color:var(--sand);}
+@media(max-width:760px){.strip__in{grid-template-columns:repeat(2,1fr);gap:var(--s6) var(--s4);}}
+
+/* ============================================================
+   BENTO GRID
+   ============================================================ */
+.bento{display:grid;grid-template-columns:repeat(6,1fr);gap:var(--s4);margin-top:var(--s12);}
+.card{
+  background:var(--white);border:1px solid var(--line);border-radius:var(--radius);
+  padding:var(--s8);display:flex;flex-direction:column;gap:var(--s3);
+  transition:transform .2s var(--ease-out),box-shadow .2s var(--ease-out),border-color .2s var(--ease-out);
+}
+.card:hover{transform:translateY(-3px);box-shadow:0 18px 40px -28px rgba(36,26,20,.55);border-color:var(--line-strong);}
+.card h3{font-size:20px;}
+.card p{font-size:15.5px;color:var(--bark);}
+.card__icon{
+  width:44px;height:44px;border-radius:12px;background:var(--linen);border:1px solid var(--line);
+  display:grid;place-items:center;color:var(--espresso);margin-bottom:var(--s2);
+}
+.card__icon svg{width:21px;height:21px;stroke:currentColor;fill:none;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round;}
+.card--feature{grid-column:span 3;background:var(--sand);border-color:transparent;}
+.card--feature .card__icon{background:rgba(255,255,255,.55);border-color:rgba(36,26,20,.1);}
+.card--feature p{color:var(--espresso);opacity:.78;}
+.card--wide{grid-column:span 3;}
+.card--third{grid-column:span 2;}
+.pricechips{display:flex;flex-wrap:wrap;gap:var(--s2);margin-top:var(--s2);}
+.chip{
+  font-size:13px;font-weight:600;background:var(--white);border:1px solid var(--line);
+  padding:7px 13px;border-radius:999px;color:var(--espresso);
+}
+@media(max-width:900px){
+  .bento{grid-template-columns:repeat(2,1fr);}
+  .card--feature,.card--wide,.card--third{grid-column:span 2;}
+}
+@media(max-width:620px){.bento{grid-template-columns:1fr;} .card{padding:var(--s6);}}
+
+/* ============================================================
+   SIGNATURE — the daily rhythm rail
+   ============================================================ */
+.rhythm{background:var(--espresso);color:var(--white);overflow:hidden;}
+.rhythm .eyebrow{color:var(--sand);}
+.rhythm .eyebrow::before{background:var(--bark);}
+.rhythm h2{font-size:clamp(28px,3.8vw,42px);max-width:20ch;}
+.rhythm__note{color:var(--sand);opacity:.8;font-size:16px;max-width:56ch;margin-top:var(--s4);}
+.rail{margin-top:var(--s12);border-top:1px solid rgba(255,255,255,.18);
+  display:grid;grid-template-columns:repeat(9,minmax(112px,1fr));}
+.rail__i{padding:var(--s6) var(--s4) var(--s8) 0;border-right:1px solid rgba(255,255,255,.1);position:relative;}
+.rail__i:last-child{border-right:0;}
+.rail__i::before{content:"";position:absolute;top:-1px;left:0;width:12px;height:3px;background:var(--coffee);}
+.rail__t{font-family:var(--display);font-size:15px;font-weight:700;color:var(--coffee);letter-spacing:.04em;}
+.rail__l{font-size:14.5px;margin-top:6px;line-height:1.4;color:var(--white);}
+.rail__d{font-size:13px;color:var(--sand);opacity:.72;margin-top:4px;line-height:1.45;}
+@media(max-width:1080px){
+  .rail{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;
+    -webkit-overflow-scrolling:touch;padding-bottom:var(--s3);}
+  .rail__i{min-width:176px;scroll-snap-align:start;padding-right:var(--s6);}
+  .rail::-webkit-scrollbar{height:3px;}
+  .rail::-webkit-scrollbar-thumb{background:var(--bark);border-radius:99px;}
+}
+
+/* ============================================================
+   CAMPUS + GALLERY
+   ============================================================ */
+.campus__grid{display:grid;grid-template-columns:1fr 1fr;gap:var(--s16);align-items:start;}
+.campus__body p + p{margin-top:var(--s4);}
+.campus__body p{color:var(--bark);font-size:17px;}
+.pillars{display:grid;gap:var(--s4);margin-top:var(--s8);}
+.pillar{display:flex;gap:var(--s4);align-items:flex-start;padding-top:var(--s4);border-top:1px solid var(--line);}
+.pillar strong{font-family:var(--display);font-size:16px;min-width:112px;flex:none;}
+.pillar span{font-size:15.5px;color:var(--bark);}
+.gallery{display:grid;grid-template-columns:1fr 1fr;gap:var(--s3);}
+.gallery .frame{aspect-ratio:1/1;}
+.gallery .frame--tall{grid-column:span 2;aspect-ratio:16/9;}
+@media(max-width:900px){.campus__grid{grid-template-columns:1fr;gap:var(--s12);}}
+
+/* ============================================================
+   PRICING
+   ============================================================ */
+.pricing__grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:var(--s12);align-items:center;}
+.pcard{background:var(--espresso);color:var(--white);border-radius:var(--radius);padding:var(--s12) var(--s8);}
+.pcard__label{font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:var(--coffee);font-weight:600;}
+.pcard__fig{font-family:var(--display);font-size:clamp(48px,6vw,68px);font-weight:800;letter-spacing:-.04em;line-height:1;margin-top:var(--s3);}
+.pcard__per{font-size:16px;color:var(--sand);margin-top:var(--s2);}
+.pcard__split{display:flex;gap:var(--s6);margin-top:var(--s6);padding-top:var(--s6);border-top:1px solid rgba(255,255,255,.18);}
+.pcard__split div span{display:block;font-size:12.5px;color:var(--sand);opacity:.8;letter-spacing:.06em;text-transform:uppercase;}
+.pcard__split div strong{font-family:var(--display);font-size:22px;font-weight:700;}
+.pcard .btn{width:100%;margin-top:var(--s8);}
+.pcard__fine{font-size:13.5px;color:var(--sand);opacity:.75;margin-top:var(--s4);text-align:center;}
+.incl{display:grid;grid-template-columns:1fr 1fr;gap:var(--s3) var(--s6);margin-top:var(--s8);}
+.incl li{display:flex;gap:10px;font-size:15.5px;align-items:flex-start;}
+.incl svg{width:18px;height:18px;flex:none;margin-top:3px;stroke:var(--espresso);fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;}
+.excl{margin-top:var(--s8);padding:var(--s4) var(--s6);border-left:2px solid var(--coffee);background:var(--linen);border-radius:0 var(--radius-sm) var(--radius-sm) 0;}
+.excl strong{font-family:var(--display);font-size:15px;display:block;margin-bottom:2px;}
+.excl p{font-size:15px;color:var(--bark);}
+@media(max-width:900px){.pricing__grid{grid-template-columns:1fr;gap:var(--s8);} .incl{grid-template-columns:1fr;}}
+
+/* ============================================================
+   FAQ
+   ============================================================ */
+.faq{max-width:820px;margin-top:var(--s12);}
+.faq details{border-top:1px solid var(--line);padding:var(--s6) 0;}
+.faq details:last-of-type{border-bottom:1px solid var(--line);}
+.faq summary{
+  font-family:var(--display);font-size:18px;font-weight:600;cursor:pointer;list-style:none;
+  display:flex;justify-content:space-between;gap:var(--s6);align-items:center;
+}
+.faq summary::-webkit-details-marker{display:none;}
+.faq summary::after{content:"+";font-size:24px;color:var(--bark);font-weight:400;line-height:1;transition:transform .2s var(--ease-out);}
+.faq details[open] summary::after{transform:rotate(45deg);}
+.faq p{margin-top:var(--s3);color:var(--bark);font-size:16px;max-width:68ch;}
+
+/* ============================================================
+   CONTACT / FOOTER
+   ============================================================ */
+.contact{background:var(--linen);border-top:1px solid var(--line);}
+.contact__grid{display:grid;grid-template-columns:1fr 1.15fr;gap:var(--s12);align-items:start;}
+.cline{padding:var(--s6) 0;border-bottom:1px solid var(--line);}
+.cline:first-of-type{border-top:1px solid var(--line);}
+.cline span{font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--bark);font-weight:600;}
+.cline a,.cline p{font-family:var(--display);font-size:20px;font-weight:600;text-decoration:none;display:block;margin-top:6px;}
+.cline a:hover{color:var(--bark);}
+.map{aspect-ratio:16/11;border-radius:var(--radius);overflow:hidden;border:1px solid var(--line);position:relative;background:var(--sand);}
+.map iframe{width:100%;height:100%;border:0;display:block;}
+.footmark{display:flex;align-items:center;gap:var(--s6);padding-block:var(--s12) var(--s8);}
+.footmark img{width:112px;height:112px;object-fit:contain;flex:none;}
+.footmark__name{font-family:var(--display);font-size:22px;font-weight:700;}
+.footmark__motto{font-size:13px;letter-spacing:.16em;text-transform:uppercase;color:var(--bark);font-weight:600;margin-top:6px;}
+.footmark__line{font-size:15.5px;color:var(--bark);margin-top:var(--s3);}
+.footmark__line a{text-decoration:none;font-weight:600;color:var(--espresso);}
+@media(max-width:620px){.footmark{flex-direction:column;align-items:flex-start;gap:var(--s4);} .footmark img{width:88px;height:88px;}}
+.foot{border-top:1px solid var(--line);padding-block:var(--s6);display:flex;flex-wrap:wrap;gap:var(--s4);
+  justify-content:space-between;align-items:center;font-size:14px;color:var(--bark);}
+.foot nav{display:flex;flex-wrap:wrap;gap:var(--s6);}
+.foot a{text-decoration:none;}
+.foot a:hover{color:var(--espresso);}
+@media(max-width:900px){.contact__grid{grid-template-columns:1fr;gap:var(--s8);}}
+
+/* ============================================================
+   MOBILE STICKY ACTION BAR (Fitts's Law — thumb-zone CTAs)
+   ============================================================ */
+.dock{
+  position:fixed;left:0;right:0;bottom:0;z-index:70;display:none;gap:var(--s2);
+  padding:10px 12px calc(10px + env(safe-area-inset-bottom));
+  background:rgba(255,255,255,.94);backdrop-filter:blur(12px);border-top:1px solid var(--line);
+}
+.dock .btn{flex:1;padding:15px 12px;font-size:15px;}
+@media(max-width:940px){.dock{display:flex;} body{padding-bottom:82px;}}
+
+/* ============================================================
+   MOTION
+   ============================================================ */
+.reveal{opacity:0;transform:translateY(18px);transition:opacity .55s var(--ease-out),transform .55s var(--ease-out);}
+.reveal.in{opacity:1;transform:none;}
+@media(prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation:none!important;transition:none!important;scroll-behavior:auto!important;}
+  .reveal{opacity:1;transform:none;}
+}
+</style>
+</head>
+
+<body>
+
+<!-- ========================= HEADER ========================= -->
+<header class="nav">
+  <div class="shell nav__in">
+    <a class="brand" href="#top" aria-label="Yadunandan Ahir Boarding, Rajkot — home">
+      <img class="brand__mark" src="logo.png" alt="Yadunandan Ahir Boarding logo" width="52" height="52" />
+      <span>
+        <span class="brand__name">Yadunandan</span>
+        <span class="brand__sub">Ahir Boarding · Rajkot</span>
+      </span>
+    </a>
+    <nav class="nav__links" aria-label="Main">
+      <a href="#facilities">Facilities</a>
+      <a href="#day">A day here</a>
+      <a href="#campus">Campus</a>
+      <a href="#fees">Fees</a>
+      <a href="#visit">Visit</a>
+    </nav>
+    <a class="btn btn--primary btn--sm nav__cta" href="tel:+917384540025">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.4 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2Z"/></svg>
+      Call for admission
+    </a>
+  </div>
+</header>
+
+<!-- ========================= HERO ========================= -->
+<section class="hero" id="top">
+  <div class="shell hero__grid">
+    <div>
+      <p class="eyebrow">યદુનંદન આહીર બોર્ડિંગ · રાજકોટ</p>
+      <h1>A disciplined home for the next generation of <em>Ahir youth.</em></h1>
+      <p class="hero__sub">
+        Boarding on Kankot Road, Rajkot — three fresh meals a day, a silent reading hall,
+        a full cricket ground and volleyball court, and a community that expects your best.
+        ₹35,000 for the year. Everything included.
+      </p>
+      <p class="hero__gu">પ્રવેશ ચાલુ છે — આજે જ કેમ્પસની મુલાકાત લો.</p>
+
+      <div class="hero__cta">
+        <a class="btn btn--primary" href="tel:+917384540025">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.4 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2Z"/></svg>
+          Call for admission
+        </a>
+        <a class="btn btn--ghost" href="https://wa.me/917384540025?text=Namaste%2C%20I%20want%20admission%20details%20for%20Yadunandan%20Ahir%20Boarding%2C%20Rajkot." target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 11.5a8.4 8.4 0 0 1-12.6 7.3L3 20.5l1.8-5.3A8.4 8.4 0 1 1 21 11.5Z"/></svg>
+          Ask on WhatsApp
+        </a>
+      </div>
+
+      <div class="hero__meta">
+        <span><i class="dot" aria-hidden="true"></i> ₹35,000 / year, all inclusive</span>
+        <span><i class="dot" aria-hidden="true"></i> 3 meals daily</span>
+        <span><i class="dot" aria-hidden="true"></i> Cricket &amp; volleyball grounds</span>
+        <span><i class="dot" aria-hidden="true"></i> Discipline · Education · Excellence</span>
+      </div>
+    </div>
+
+    <!-- HERO IMAGE — replace the .ph block with: <img src="images/hero-ground.jpg" alt="Students on the cricket ground at Yadunandan Ahir Boarding, Rajkot"> -->
+    <figure class="frame frame--hero" style="margin:0">
+      <div class="ph"><b>Hero photo</b><span>Wide shot of the campus ground at golden hour, or students in the reading hall. 1600×2000px.</span></div>
+      <div class="frame__overlay" aria-hidden="true"></div>
+      <figcaption class="frame__cap">
+        <strong>Room to run. Reason to study.</strong>
+        <span>Kankot Road, Rajkot</span>
+      </figcaption>
+    </figure>
+  </div>
+</section>
+
+<!-- ========================= TRUST STRIP ========================= -->
+<section class="strip">
+  <div class="shell strip__in">
+    <div class="strip__item"><strong>₹35,000</strong><span>per year, all inclusive</span></div>
+    <div class="strip__item"><strong>3 meals</strong><span>cooked fresh, every day</span></div>
+    <div class="strip__item"><strong>2 grounds</strong><span>cricket and volleyball</span></div>
+    <div class="strip__item"><strong>Kankot Rd</strong><span>Rajkot, Gujarat</span></div>
+  </div>
+</section>
+
+<!-- ========================= FACILITIES / BENTO ========================= -->
+<section class="section" id="facilities">
+  <div class="shell">
+    <div class="reveal">
+      <p class="eyebrow">What you get</p>
+      <h2 class="h2">Everything a serious student needs. Nothing that gets in the way.</h2>
+      <p class="lede">One fee, one campus, one routine. Food, study space, grounds and community are already handled — so the only thing left to manage is your work.</p>
+    </div>
+
+    <div class="bento">
+      <!-- All-inclusive -->
+      <article class="card card--feature reveal">
+        <span class="card__icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 2v20M17 5.5H9.5a3 3 0 0 0 0 6h5a3 3 0 0 1 0 6H6"/></svg></span>
+        <h3>All-inclusive living</h3>
+        <p>₹35,000 for the full year covers your bed, three meals a day, the reading hall, the grounds and the community hall. No monthly bills, no surprise charges sent home mid-term.</p>
+        <div class="pricechips">
+          <span class="chip">≈ ₹2,917 / month</span>
+          <span class="chip">≈ ₹96 / day</span>
+        </div>
+      </article>
+
+      <!-- Food -->
+      <article class="card card--wide reveal">
+        <span class="card__icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 3v8a3 3 0 0 0 6 0V3M7 11v10M18 3c-1.5 2-2 4-2 6.5V13h4V9.5C20 7 19.5 5 18 3ZM18 13v8"/></svg></span>
+        <h3>Three meals, every day</h3>
+        <p>Breakfast, lunch and dinner cooked fresh in a hygienic kitchen on a fixed schedule — so students eat properly during exam weeks too, not just when they remember to.</p>
+      </article>
+
+      <!-- Reading -->
+      <article class="card card--third reveal">
+        <span class="card__icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M3 5.5A2.5 2.5 0 0 1 5.5 3H11v17H5.5A2.5 2.5 0 0 0 3 22.5ZM21 5.5A2.5 2.5 0 0 0 18.5 3H13v17h5.5a2.5 2.5 0 0 1 2.5 2.5Z"/></svg></span>
+        <h3>A reading hall that stays quiet</h3>
+        <p>A calm, well-lit study area with proper seating and lighting — silent by rule, open early morning and late night through exam season.</p>
+      </article>
+
+      <!-- Sports -->
+      <article class="card card--third reveal">
+        <span class="card__icon" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 3v18M4.6 7.5c4.6 1.4 10.2 1.4 14.8 0M4.6 16.5c4.6-1.4 10.2-1.4 14.8 0"/></svg></span>
+        <h3>Cricket ground &amp; volleyball court</h3>
+        <p>A full cricket ground and a marked volleyball court on campus. Evening play is part of the daily routine here, not a reward for finishing early.</p>
+      </article>
+
+      <!-- Hall -->
+      <article class="card card--third reveal">
+        <span class="card__icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M3 21V9l9-6 9 6v12M3 21h18M9 21v-6h6v6M8 12h.01M16 12h.01"/></svg></span>
+        <h3>Community hall</h3>
+        <p>A large multi-purpose hall for festivals, guest lectures, community programmes and family gatherings — space enough for the whole boarding at once.</p>
+      </article>
+
+      <!-- Campus -->
+      <article class="card card--wide reveal">
+        <span class="card__icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M3 20h18M5 20V9l7-5 7 5v11M9 20v-5h6v5"/><path d="M2 12h3M19 12h3"/></svg></span>
+        <h3>Open campus, room to breathe</h3>
+        <p>Wide open ground on all sides — space to walk, run and clear your head between study sessions. Rare inside a city that keeps getting denser.</p>
+      </article>
+
+      <!-- Community -->
+      <article class="card card--wide reveal">
+        <span class="card__icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M16 20v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="3.2"/><path d="M22 20v-2a4 4 0 0 0-3-3.8M16.5 4.2A3.2 3.2 0 0 1 16.5 10"/></svg></span>
+        <h3>Your own community around you</h3>
+        <p>Ahir students from across Saurashtra, in one place, chasing the same exams and standards. Seniors who have already cleared the path you are on — and a warden who knows every boy by name.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ========================= SIGNATURE: DAILY RHYTHM ========================= -->
+<!-- EDIT THESE TIMES to match the boarding's actual timetable before publishing. -->
+<section class="section rhythm" id="day">
+  <div class="shell">
+    <div class="reveal">
+      <p class="eyebrow">A day here</p>
+      <h2>Discipline isn't a slogan on the wall. It's the timetable.</h2>
+      <p class="rhythm__note">Every day runs on the same rhythm. Students don't spend energy deciding what to do next — they spend it doing the work.</p>
+    </div>
+
+    <div class="rail reveal">
+      <div class="rail__i"><p class="rail__t">05:45</p><p class="rail__l">Wake up</p><p class="rail__d">Beds made, ready for the day</p></div>
+      <div class="rail__i"><p class="rail__t">06:15</p><p class="rail__l">Morning study</p><p class="rail__d">Reading hall, the quietest hours</p></div>
+      <div class="rail__i"><p class="rail__t">08:00</p><p class="rail__l">Breakfast</p><p class="rail__d">Fresh, hot, on time</p></div>
+      <div class="rail__i"><p class="rail__t">09:15</p><p class="rail__l">College</p><p class="rail__d">Attendance tracked by the warden</p></div>
+      <div class="rail__i"><p class="rail__t">13:30</p><p class="rail__l">Lunch</p><p class="rail__d">Full Gujarati thali</p></div>
+      <div class="rail__i"><p class="rail__t">17:30</p><p class="rail__l">Ground time</p><p class="rail__d">Cricket and volleyball, daily</p></div>
+      <div class="rail__i"><p class="rail__t">20:00</p><p class="rail__l">Dinner</p><p class="rail__d">Together, as one boarding</p></div>
+      <div class="rail__i"><p class="rail__t">21:00</p><p class="rail__l">Study hall</p><p class="rail__d">Phones down, books open</p></div>
+      <div class="rail__i"><p class="rail__t">22:45</p><p class="rail__l">Lights out</p><p class="rail__d">Eight hours, every night</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ========================= CAMPUS & LIFESTYLE ========================= -->
+<section class="section section--wash" id="campus">
+  <div class="shell campus__grid">
+    <div class="campus__body reveal">
+      <p class="eyebrow">The campus</p>
+      <h2 class="h2">Distractions stay outside the gate.</h2>
+      <p style="margin-top:var(--s6)">
+        Rajkot has no shortage of ways to lose a year. This campus is built so that the easy thing to do
+        is also the right thing to do — study early, eat properly, play hard in the evening, sleep on time.
+      </p>
+      <p>
+        You live among boys from your own community who are chasing the same exams and the same standards.
+        That brotherhood does more for discipline than any rule on a notice board. Seniors pull juniors up,
+        the warden knows every name, and nobody quietly disappears for three weeks.
+      </p>
+      <p>
+        It's a simple trade: fewer choices, better habits — and years the family doesn't have to worry about.
+      </p>
+
+      <ul class="pillars">
+        <li class="pillar"><strong>Discipline</strong><span>Fixed timings for study, meals, ground and lights out — supervised, not assumed.</span></li>
+        <li class="pillar"><strong>Brotherhood</strong><span>A senior–junior culture where results and conduct are everyone's business.</span></li>
+        <li class="pillar"><strong>Focus</strong><span>A silent reading hall and phone-down study hours during exam season.</span></li>
+      </ul>
+    </div>
+
+    <!-- GALLERY — swap each .ph for <img src="..." alt="..."> -->
+    <div class="gallery reveal">
+      <figure class="frame frame--tall" style="margin:0">
+        <div class="ph"><b>Cricket ground</b><span>Wide angle, match or practice in progress</span></div>
+      </figure>
+      <figure class="frame" style="margin:0">
+        <div class="ph"><b>Dining hall</b><span>Thali served, students seated</span></div>
+      </figure>
+      <figure class="frame" style="margin:0">
+        <div class="ph"><b>Reading hall</b><span>Students studying, natural light</span></div>
+      </figure>
+      <figure class="frame" style="margin:0">
+        <div class="ph"><b>Rooms</b><span>Clean beds, storage, made up</span></div>
+      </figure>
+      <figure class="frame" style="margin:0">
+        <div class="ph"><b>Community hall</b><span>Full hall during an event</span></div>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- ========================= PRICING ========================= -->
+<section class="section" id="fees">
+  <div class="shell">
+    <div class="reveal">
+      <p class="eyebrow">Fees</p>
+      <h2 class="h2">One fee for the year. Written down, not negotiated later.</h2>
+      <p class="lede">Parents ask two questions: what does it cost, and what else will it cost. Here are both answers.</p>
+    </div>
+
+    <div class="pricing__grid" style="margin-top:var(--s12)">
+      <div class="pcard reveal">
+        <p class="pcard__label">Annual boarding fee</p>
+        <p class="pcard__fig">₹35,000</p>
+        <p class="pcard__per">per student, per year — all inclusive</p>
+        <div class="pcard__split">
+          <div><span>Works out to</span><strong>≈ ₹2,917 / mo</strong></div>
+          <div><span>Which is</span><strong>≈ ₹96 / day</strong></div>
+        </div>
+        <a class="btn btn--light" href="tel:+917384540025">Book a campus tour</a>
+        <p class="pcard__fine">Or WhatsApp Rameshbhai Jilrya on +91 73845 40025 for the admission form</p>
+      </div>
+
+      <div class="reveal">
+        <h3 style="font-size:20px">Included in the ₹35,000</h3>
+        <ul class="incl">
+          <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg> Bed, mattress and personal storage</li>
+          <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg> Breakfast, lunch and dinner, daily</li>
+          <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg> Clean drinking water and kitchen hygiene</li>
+          <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg> Reading hall access, morning to late night</li>
+          <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg> Cricket ground and volleyball court</li>
+          <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg> Community hall for events</li>
+          <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg> Electricity and water</li>
+          <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg> Warden supervision and attendance</li>
+          <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg> Open campus grounds, all hours</li>
+          <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg> Parent visiting facility</li>
+        </ul>
+
+        <!-- Honesty block: converts better with parents than an all-green list. Edit to match your actual policy. -->
+        <div class="excl">
+          <strong>Not included</strong>
+          <p>College or coaching fees, personal laundry, medical expenses and travel. Anything you're unsure about, ask before you pay — we'd rather answer it now than argue about it later.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========================= FAQ ========================= -->
+<!-- Answers below are drafts. Confirm each one against your actual admission policy. -->
+<section class="section section--wash">
+  <div class="shell">
+    <div class="reveal">
+      <p class="eyebrow">Before you call</p>
+      <h2 class="h2">Questions parents ask first.</h2>
+    </div>
+    <div class="faq reveal">
+      <details>
+        <summary>Who can apply?</summary>
+        <p>Ahir students studying in Rajkot — school, college, or preparing for competitive exams. Call us with the student's course and year and we'll tell you straight away whether a seat is available.</p>
+      </details>
+      <details>
+        <summary>How is admission confirmed?</summary>
+        <p>Visit the campus with the student, meet the warden, and see the rooms, kitchen and grounds yourself. If it's the right fit on both sides, the form and fee are completed the same day.</p>
+      </details>
+      <details>
+        <summary>What is the food like?</summary>
+        <p>Pure vegetarian Gujarati meals — three times a day, on a fixed menu rotation, cooked fresh on campus. Parents are welcome to inspect the kitchen during a visit.</p>
+      </details>
+      <details>
+        <summary>Can parents visit and stay in touch?</summary>
+        <p>Yes. Parents can visit during visiting hours, and the warden is reachable on phone for attendance, health or discipline matters at any time.</p>
+      </details>
+      <details>
+        <summary>Are seats available all year?</summary>
+        <p>Seats are limited and fill fastest before the academic year begins. Call to check current availability rather than assuming — it changes month to month.</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- ========================= CONTACT ========================= -->
+<section class="contact section" id="visit">
+  <div class="shell">
+    <div class="contact__grid">
+      <div class="reveal">
+        <p class="eyebrow">Visit us</p>
+        <h2 class="h2">Come see the ground before you decide.</h2>
+        <p class="lede">Ten minutes on campus tells you more than any website. Call ahead and we'll keep the warden free for you.</p>
+
+        <div style="margin-top:var(--s8)">
+          <div class="cline"><span>Speak to</span><p>Rameshbhai Jilrya</p></div>
+          <div class="cline"><span>Call or WhatsApp</span><a href="tel:+917384540025">+91 73845 40025</a></div>
+          <div class="cline"><span>Address</span><p>Yadunandan Ahir Boarding,<br>Kankot Road, Rajkot, Gujarat</p></div>
+          <div class="cline"><span>Campus visits</span><p>Daily, 9:00 AM – 7:00 PM</p></div>
+        </div>
+
+        <div style="display:flex;flex-wrap:wrap;gap:var(--s3);margin-top:var(--s8)">
+          <a class="btn btn--primary" href="tel:+917384540025">Call for admission</a>
+          <a class="btn btn--ghost" href="https://wa.me/917384540025?text=Namaste%2C%20I%20would%20like%20to%20book%20a%20campus%20tour%20at%20Yadunandan%20Ahir%20Boarding%2C%20Rajkot." target="_blank" rel="noopener">Book a tour on WhatsApp</a>
+        </div>
+      </div>
+
+      <!-- MAP: replace this placeholder with the <iframe> copied from Google Maps → Share → Embed a map -->
+      <div class="map reveal">
+        <div class="ph"><b>Google Map embed</b><span>Paste your embed iframe here: Google Maps → your pin → Share → Embed a map → copy HTML.</span></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="shell footmark">
+    <img src="logo.png" alt="Yadunandan Ahir Boarding logo" width="112" height="112" />
+    <div>
+      <p class="footmark__name">Yadunandan Ahir Boarding</p>
+      <p class="footmark__motto">Discipline · Education · Excellence</p>
+      <p class="footmark__line">Rameshbhai Jilrya · <a href="tel:+917384540025">+91 73845 40025</a></p>
+    </div>
+  </div>
+
+  <div class="shell foot">
+    <p>© <span id="yr">2026</span> Yadunandan Ahir Boarding, Kankot Road, Rajkot, Gujarat.</p>
+    <nav aria-label="Footer">
+      <a href="#facilities">Facilities</a>
+      <a href="#day">A day here</a>
+      <a href="#fees">Fees</a>
+      <a href="tel:+917384540025">+91 73845 40025</a>
+    </nav>
+  </div>
+</section>
+
+<!-- ========================= MOBILE DOCK ========================= -->
+<div class="dock" role="group" aria-label="Contact actions">
+  <a class="btn btn--primary" href="tel:+917384540025">Call now</a>
+  <a class="btn btn--ghost" href="https://wa.me/917384540025?text=Namaste%2C%20I%20want%20admission%20details%20for%20Yadunandan%20Ahir%20Boarding%2C%20Rajkot." target="_blank" rel="noopener">WhatsApp</a>
+</div>
+
+<script>
+  document.getElementById('yr').textContent = new Date().getFullYear();
+
+  var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var items = document.querySelectorAll('.reveal');
+  if (reduce || !('IntersectionObserver' in window)) {
+    items.forEach(function(el){ el.classList.add('in'); });
+  } else {
+    var io = new IntersectionObserver(function(entries){
+      entries.forEach(function(e){
+        if (e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target); }
+      });
+    }, { rootMargin: '0px 0px -8% 0px', threshold: 0.08 });
+    items.forEach(function(el){ io.observe(el); });
+  }
+</script>
+</body>
+</html>
